@@ -5,7 +5,16 @@ banner:
     image-position: 50% 50%
     heading: High School Seniors
     subheading: 
-image: 
+senior-photos:
+  - /images/senior-photos/LeahK-33.jpg
+  - /images/senior-photos/leahk-7.jpg
+  - /images/senior-photos/leahk-4.jpg
+  - /images/senior-photos/LeahK-33.jpg
+  - /images/senior-photos/leahk-7.jpg
+  - /images/senior-photos/leahk-4.jpg
+  - /images/senior-photos/LeahK-33.jpg
+  - /images/senior-photos/leahk-7.jpg
+  - /images/senior-photos/leahk-4.jpg
 seo: 
     title: The Golden Hour by Sara Schneider | Photography
     description: 
@@ -19,7 +28,7 @@ seo:
 
 <section class="p-8">
 	<div class="columns-2 md:columns-3">
-	{% for item in site.senior-photos %}
+	{% for item in page.senior-photos %}
 	
 		{% include photo-loop-item-free.html %}
 	
