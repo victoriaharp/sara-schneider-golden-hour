@@ -1,0 +1,77 @@
+---
+layout: default 
+banner:
+    image: /images/headshots/8790.jpg
+    image-position: 50% 50%
+    heading: What is Coahching?
+    subheading: 
+reasons:
+  - image: /images/color-blocks/yellow.png
+    reason: Clarity & Goal Setting
+    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium id rerum architecto. Eum nihil perferendis ratione amet unde blanditiis eveniet cupiditate deserunt nostrum, excepturi in mollitia illo nemo. 
+  - image: /images/color-blocks/light-blue.png
+    reason: Growth & Development
+    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium id rerum architecto. Eum nihil perferendis ratione amet unde blanditiis eveniet cupiditate deserunt nostrum, excepturi in mollitia illo nemo. 
+  - image: /images/color-blocks/burnt-orange.png
+    reason: Accountability & Motivation
+    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium id rerum architecto. Eum nihil perferendis ratione amet unde blanditiis eveniet cupiditate deserunt nostrum, excepturi in mollitia illo nemo.
+  - image: /images/color-blocks/dark-blue.png
+    reason: Reason 4
+    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium id rerum architecto. Eum nihil perferendis ratione amet unde blanditiis eveniet cupiditate deserunt nostrum, excepturi in mollitia illo nemo. 
+  - image: /images/color-blocks/red.png
+    reason: Reason 5
+    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium id rerum architecto. Eum nihil perferendis ratione amet unde blanditiis eveniet cupiditate deserunt nostrum, excepturi in mollitia illo nemo. 
+seo: 
+    title: The Golden Hour by Sara Schneider | Coaching
+    description: 
+    keywords: 
+    social_image: /images/headshots/8790.jpg
+    hide-from-google: false
+--- 
+
+<!-- default includes header-nav.html -->
+ {% include hero-banner.html %}
+
+
+ <!-- Info section -->
+ <section class="grid grid-cols-2 px-10p py-5p items-center">
+    <div>
+        <h3 class="font-italiana text-4xl">Life Coaches...</h3>
+        <p class="font-montserrat text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium id rerum architecto. Eum nihil perferendis ratione amet unde blanditiis eveniet cupiditate deserunt nostrum, excepturi in mollitia illo nemo. Ratione, tempora.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem tenetur vero magnam, temporibus, eos, unde aliquam necessitatibus molestiae itaque fugiat aspernatur! Sapiente dolores error nobis eaque ullam dignissimos commodi?</p>
+    </div>
+    <img src="/images/suns/sunset-6.jpeg" class="object-cover object-center w-full h-[80vh]">
+ </section>
+
+ <section class="grid grid-cols-2 gap-10 px-10p pb-5p items-center">
+
+    <img src="/images/suns/sunset-1.jpeg" class="object-cover object-center w-full h-[80vh]">
+
+    <div>
+        <h3 class="font-italiana text-4xl">Secondary Heading Here.</h3>
+        <p class="font-montserrat text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium id rerum architecto. Eum nihil perferendis ratione amet unde blanditiis eveniet cupiditate deserunt nostrum, excepturi in mollitia illo nemo. Ratione, tempora.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem tenetur vero magnam, temporibus, eos, unde aliquam necessitatibus molestiae itaque fugiat aspernatur! Sapiente dolores error nobis eaque ullam dignissimos commodi?</p>
+    </div>
+
+ </section>
+
+ <!-- 5 reasons section -->
+
+
+ <!-- horizontal scroll gallery -->
+<section class="">
+    <div class="md:flex py-5p mx-5p">
+        <div class="md:flex text-left">
+            <h2 class="uppercase font-italiana text-4xl md:rotate-text-180">5 Reasons to Hire a Coach</h2> 
+        </div>
+    </div> 
+
+
+    <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll px-0 items-center">
+        {% for item in page.reasons %}
+        <div class="basis-[30%] 3xl:basis-[20%] shrink-0 relative">
+            <img src="{{item.image}}" class="grow object-cover object-center inset-0 w-full h-full">
+            <h4 class="font-italiana text-2xl border-b border-black pb-5">{{item.reason}}</h4>
+            <p class="font-montserrat">{{item.description}}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
