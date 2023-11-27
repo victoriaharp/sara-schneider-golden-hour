@@ -615,6 +615,9 @@ body .MemberSpaceWidgetInternal__BrandedInterface_footer{display: none; }
 .max-h-screen {
   max-height: 100vh;
 }
+.max-h-\[75vh\] {
+  max-height: 75vh;
+}
 .min-h-\[90vh\] {
   min-height: 90vh;
 }

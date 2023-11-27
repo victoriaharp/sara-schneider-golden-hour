@@ -1,0 +1,28 @@
+---
+layout: default 
+banner:
+    image: /images/headshots/8706.jpg
+    image-position: 50% 50%
+    heading: High School Seniors
+    subheading: 
+image: 
+seo: 
+    title: The Golden Hour by Sara Schneider | Photography
+    description: 
+    keywords: 
+    social_image: /images/headshots/8706.jpg
+    hide-from-google: false
+--- 
+<!-- default includes header-nav.html -->
+{% include hero-banner.html %}
+
+
+<section class="p-8">
+	<div class="columns-2 md:columns-3">
+	{% for item in site.senior-photos %}
+	
+		{% include photo-loop-item-free.html %}
+	
+	{% endfor %}
+	</div>
+</section>
