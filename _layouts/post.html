@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<!-- this is the first intro section -->
+
+{% include hero-banner.html %}
+
+<section class="p-8 flex grid-cols-3 justify-between items-center border-t border-b border-dark-grey">  
+	<p class="font-montserrat mb-0"> By {{page.author}} </p>
+	<h1 class="font-italiana uppercase text-4xl mb-0"> {{page.title}} </h1>
+	<p class="font-montserrat mb-0">{{page.date | date_to_long_string}}</p>
+</section>
+
+<!-- this is the main content section -->
+<section class="px-15p py-5p text-center font-montserrat content">
+	{{ content }}
+</section> 
+
+<!-- this is a placeholder section to later add the related posts -->
+<section class="p-8 bg-stone-200"> 
+ 	<p> Add related posts include here later </p>
+</section>

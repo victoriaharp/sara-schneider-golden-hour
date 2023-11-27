@@ -1,0 +1,8 @@
+- link: /blog
+  name: Blog
+
+- link: /shop
+  name: Shop
+  
+- link: /member-login
+  name: Member Login

@@ -1,0 +1,129 @@
+
+/* ----------- Color Variables --------- */
+/* Looking for the color variables? They have been moved to the inline-styles file in the _includes folder, and pull variables from the site-settings folder in the _data folder.  */
+
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+
+html {
+  scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
+}
+
+
+/* ----------- Default Styles to apply to the whole project  --------- */
+
+@layer base {
+
+    h1, h2, h3, h4  {
+        @apply font-sans mb-[0.5em];
+    }
+
+    h1 {
+        @apply text-3xl leading-tight;
+    }
+    h2 {
+        @apply text-2xl leading-tight;
+    }
+    h3 {
+        @apply text-xl leading-tight;
+    }
+
+    h3 {
+        @apply text-lg leading-tight;
+    }
+    h4 {
+        @apply text-lg leading-tight;
+    }
+
+    p {
+        @apply mb-[0.5em] leading-normal;
+    }
+    .content h2, 
+    .content h3 {
+        @apply uppercase font-montserrat pb-5;
+    }
+    .content p {
+        @apply text-center pb-5;
+    }
+    .content blockquote{
+        @apply text-5xl font-italiana text-center max-w-xl mx-auto;
+    }
+    .sidebar-content h2, 
+    .sidebar-content h3 {
+        @apply uppercase font-montserrat pb-5;
+    }
+    .sidebar-content p {
+        @apply text-left pb-5 font-montserrat;
+    }
+    .sidebar-content blockquote p{
+        @apply text-5xl font-italiana text-left ;
+    }
+
+
+    /* memberspace special styling */
+    ms-css-seed-with-revert :not(svg):not(g):not(path):not(circle):not(ellipse):not(rect):not(line):not(polyline):not(polygon):not(stop):not(iframe) {
+        width: initial !important;
+    }
+
+    #memberspace-section #memberspace-login-form input {
+        @apply border-0 border-b border-black rounded-none w-full;
+       }
+       
+       #memberspace-section #memberspace-login-form label {
+        @apply font-montserrat uppercase font-extralight;
+       }
+       #memberspace-section #memberspace-login-form .MemberSpaceWidgetInternal__Typography_variant-input-label, #memberspace-section #memberspace-login-form .MemberSpaceWidgetInternal__Typography_variant-input-label2{
+        @apply font-light;
+       }
+
+       #memberspace-section #memberspace-login-form ms-widget-ui  {
+        @apply block justify-start;
+       }
+        #memberspace-login-form {
+        @apply p-5p;
+       }
+
+
+       /* Forgot Email / forgot password text */
+       #memberspace-section #memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
+           @apply focus:outline-none;
+       
+       }
+       
+       #memberspace-section #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
+           @apply text-xs focus:outline-none;
+       }
+       
+       #memberspace-section #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-secondary {
+           @apply text-xs focus:outline-none;
+       }
+        
+       body .MemberSpaceWidgetInternal__BrandedInterface_footer{display: none; }
+  }
+
+
+/* ----------- ADDITIONAL COMPONENTS  --------- */
+
+@layer components {
+
+    .tag {
+        @apply text-sm inline-block p-1 uppercase tracking-wide text-stone-600;
+    }
+
+    .button  {
+        @apply inline-block px-4 py-2 uppercase tracking-wide bg-zinc-800 text-white ;
+    }
+
+    .line-clamp-4{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+    }
+
+
+}

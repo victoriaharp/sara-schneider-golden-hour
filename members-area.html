@@ -1,0 +1,47 @@
+---
+layout: default
+banner:
+    heading: Members Area
+    subheading: Welcome to our private member's area!
+    image: /images/blog-bg-17.jpg
+members-content: 
+    - title: This is a title
+      content_html: some content 
+    - title: This is a second title 
+      content_html: some content 
+    - title: This is a third title 
+      content_html: some content
+---
+<section class="flex pl-5p items-center min-h-[40vh] bg-center bg-cover relative text-white " style="background-image:url('{{ page.banner.image }}')">
+
+    <div class="">
+        <p class="font-montserrat text-base uppercase tracking-widest">{{page.banner.supheading}}</p>
+        <h1 class="font-italiana text-7xl md:text-8xl tracking-widest">{{page.banner.heading}}</h1>
+        <h2 class="font-montserrat text-base uppercase tracking-widest">{{page.banner.subheading}}</h2>
+    </div>
+
+</section>
+
+
+<section class="min-h-80 p-5p grid grid-cols-4">
+
+    <div class="col-span-1">
+
+            {% for item in page.members-content %}
+            <a href="#{{item.title | slugify }}" class="block"> {{item.title}}</a>
+            {% endfor %}
+
+    </div> 
+
+    <div class="col-span-3">
+
+        {% for item in page.members-content %}
+        <div id="{{item.title | slugify}}" class="p-5p border-b-2"> 
+            {{ item.content_html }}
+        </div>
+
+        {% endfor %}
+
+    </div> 
+    
+</section>

@@ -1,0 +1,11 @@
+<div class="{% if post.aspect-ratio == 'aspect-square' %} basis-60p md:basis-30p {% else %} basis-90p md:basis-45p {% endif %} shrink-0 relative pb-5 break-inside-avoid">
+    <div class="bg-cover relative {{ post.aspect-ratio }}">
+        <img src="{{ post.featured_image }}" alt="{{post.title}}"class="absolute inset-0 w-full h-full object-cover ">
+    </div>
+    
+    <div class="p-2">
+        <h4 class="uppercase font-montserrat"> {{post.title}} </h4>
+        <p class="font-montserrat line-clamp-4"> {{post.description}} </p>
+        <a href="{{post.url}}" class="uppercase font-italiana border-b border-dark-grey">  Read More </a>  
+    </div>
+</div>

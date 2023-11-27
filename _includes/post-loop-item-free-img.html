@@ -1,0 +1,30 @@
+<!-- <div>
+	
+	<div class="bg-cover aspect-square relative">
+        <img src="{{ post.featured_image }}" alt="{{post.title}}" class="absolute inset-0 w-full h-full object-cover">
+    </div>
+    
+    <div class="p-2">
+    	<h4> {{post.title}} </h4>
+    	<p> {{post.description | truncatewords: 30 }}  </p>
+    	<a href="{{post.url}}">  Read More </a>  
+    </div>
+    
+</div> -->
+<div class=" pb-5 break-inside-avoid">
+
+        <img src="{{ post.featured_image }}" alt="{{post.title}}"class="w-full ">
+        
+    
+    <div class="p-2">
+        <div class="grid md:grid-cols-2 justify-between py-3">
+            <h4 class="uppercase text-left font-montserrat"> {{post.title}} </h4>
+            <h4 class="font-montserrat text-left md:text-right text-sm md:text-base"> {{post.date | date_to_long_string}} </h4>
+        </div>
+        <p class="font-montserrat line-clamp-4"> {{post.description}} </p>
+        
+        <div class="text-right">
+            <a href="{{post.url}}" class="uppercase font-italiana border-b border-dark-grey">  Read More </a>  
+        </div>
+    </div>
+</div>

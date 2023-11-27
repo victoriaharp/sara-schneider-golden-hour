@@ -1,0 +1,74 @@
+---
+layout: default
+---
+{% include product-hero-banner.html %}
+
+<!-- what's inside section -->
+<section>
+    <h3 class="font-italiana text-3xl text-left md:text-center uppercase mt-5p pl-5p md:pl-0">What's inside</h3>
+
+    <div class="p-5p">
+        <img src="{{page.inside-image}}" class="object-cover aspect-landscape">
+        <div class="grid grid-cols-6 gap-2 pt-2">
+            {% for item in page.gallery %}
+                <img src="{{item.image-path}}" class="inset-0 w-full h-full object-cover" alt="{{item.alt}}">
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+<!-- table of contents and what's included -->
+<section class="p-5p bg-light-grey">
+
+    <div class="grid md:grid-cols-3 gap-10 items-top">
+
+        <div class="col-span-2 md:pr-5p">
+            <h3 class="font-italiana text-2xl uppercase tracking-widest pb-5p">Table of Contents</h3>
+            <ul class="grid divide-y divide-dark-grey border-y border-dark-grey font-montserrat">
+
+                {% for item in page.contents %}
+                <li class="flex justify-between w-full py-5 ">
+                    <p class="mb-0 leading-9 uppercase">{{item.chapter}}</p>
+                    <p class="mb-0 leading-9">Page {{item.page}}</p>
+                </li>
+                {% endfor %}
+
+            </ul>
+        </div>
+
+
+        <div class="md:pl-5p">
+            <h3 class="font-italiana text-2xl uppercase tracking-widest pb-5p">What's included</h3>
+            <p class="editable font-montserrat">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatem aliquid atque numquam maxime in ad minus unde soluta. Dolorum omnis vitae repellat consectetur nesciunt blanditiis? Magni eius earum dicta.</p>
+        </div>
+
+
+    </div>
+ </section>
+
+
+
+ <!-- related posts -->
+ <section class="p-5p bg-light-grey">
+    <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Related Products</h3>
+    <div class="grid md:grid-cols-3 gap-5">
+        <!-- create counter, set value to 0 -->
+        {% assign related-product-count = 0 %}
+        <!-- start for loop -->
+        {% for item in site.products-guides %}
+            {% if item.url == page.url %}
+            <!-- do nothing -->
+            <!-- otherwise -->
+            {% else %}
+                {% if related-product-count < 3 %}
+                    <!-- if counter is less than 3 then output -->
+                    {% include product-loop-item.html type='Travel Guide' %}
+                    <!-- This adds +1 to the counter -->
+                    {% assign related-product-count = related-product-count | plus:1 %}
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
+
+</section>

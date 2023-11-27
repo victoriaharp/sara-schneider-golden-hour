@@ -1,0 +1,59 @@
+---
+layout: default
+banner:
+    image: /images/blog-bg-17.jpg
+    supheading: shop our
+    heading: Curated Collection
+    subheading: Shopping our travel guides and presets teaches you to appreciate the finer things in life, to be present, live in the moment, and just breathe.
+seo: 
+    title: A Whole New World
+    description: 
+    keywords:
+    social_image: /images/blog-bg-12.jpg
+    hide-from-google: false
+secondary-banner:
+    image: /images/blog-bg-10.jpg
+    quote: Once you get a tast for travel, you'll never be the same
+---
+
+{% include hero-banner.html %}
+
+<!-- travel guide shop TO DO replace code if needed -->
+
+
+<!-- travel guide shop -->
+<section class="p-5p bg-light-grey">
+    <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Travel Guides</h3>
+    <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0 relative">
+    
+        {% for item in site.products-guides %}
+
+            {% include product-loop-item.html type='Travel Guide' %}
+
+        {% endfor %}
+    </div>
+
+</section>
+
+<!-- big quote banner -->
+<section class="flex items-center min-h-[50vh] bg-center bg-cover relative text-white" style="background-image:url('{{ page.secondary-banner.image }}')">
+
+        <h3 class="font-italiana text-[4vw] pr-50p tracking-widest mb-0 p-5p">"{{page.secondary-banner.quote}}"</h3>
+
+
+</section>
+
+
+<!-- lightroom shop -->
+<section class="p-5p bg-light-grey">
+    <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Lightroom Presets</h3>
+    <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0 relative">
+    
+        {% for item in site.products-presets %}
+
+            {% include product-loop-item.html type='Lightroom Preset' %}
+
+        {% endfor %}
+    </div>
+
+</section>

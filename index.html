@@ -1,0 +1,78 @@
+---
+layout: default 
+banner:
+    image: /images/blog-bg-12.jpg
+    heading: A whole new world
+    subheading: Surfing teaches you to appreciate the finer things in life, to be present, live in the moment, and just breathe.
+current-location:
+    image: /images/blog-bg-14.jpg
+    location: Tuscany
+seo: 
+    title: A Whole New World
+    description: 
+    keywords: 
+    social_image: /images/blog-bg-11.jpg
+    hide-from-google: false
+--- 
+
+<!-- default includes header-nav.html -->
+ {% include hero-banner.html %}
+
+
+ <!-- Fascinating heading about the site // hard coded -->
+ <section class="grid md:grid-cols-2 items-center p-5p bg-light-grey border-y border-dark-grey">
+
+    <img src="/images/blog-bg-13.jpg" class="text-center md:p-5p max-h-80 w-full object-cover order-last md:order-first" alt="small collection of beach-themed belongings, including white sandals, a tan purse, a blue water bottle, and light blue swim suit.">
+
+    <div class="p-5p">
+        <h2 class="text-4xl font-italiana">A fascinating heading about the site</h3>
+        <p class="font-montserrat text-base py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas temporibus aliquam rerum accusantium. Accusamus impedit ullam minima, iste sequi laudantium possimus ea porro minus culpa voluptatum enim necessitatibus dolore rerum. <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam illo possimus laborum nam quo sed animi cumque? Illo nihil porro laudantium ipsa pariatur excepturi, praesentium eveniet labore. Dignissimos, eligendi cupiditate.</p>
+        <a href="#" class="font-italiana border-b border-dark-grey uppercase hover:border-white py-2">Read more</a>
+    </div>
+
+ </section>
+
+
+
+ <!-- upcoming travel destinations -->
+ <section class="p-5p text-center">
+    <h3 class="font-italiana text-2xl uppercase tracking-widest pb-5p">Upcoming Travel Destinations</h3>
+
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+
+        <ul class="grid divide-y divide-dark-grey border-y border-dark-grey font-montserrat">
+<!-- This references data pulled from a site level data file, entered in cloudcannon by the client. -->
+            {% for upcoming in site.data.destinations.upcoming %}
+            <li class="flex justify-between w-full py-5 ">
+                <p class="mb-0 leading-9 uppercase">{{ upcoming.location }}</p>
+                <p class="mb-0 leading-9">{{ upcoming.dates }}</p>
+            </li>
+            {% endfor %}
+
+        </ul>
+
+
+<!-- This is pulled from the front matter in the home page -->
+        <div class="flex pl-5p items-center bg-[url('{{ page.current-location.image }}')] bg-center bg-cover relative min-h-50">
+            <p class="absolute bg-light-grey text-dark-grey left-0 bottom-20p font-italiana text-2xl leading-9 pl-1 pr-5 py-3 ">Currently in {{ page.current-location.location }}</p>
+        </div>
+
+
+    </div>
+ </section>
+
+
+ <!-- recently on the blog -->
+ <section class="bg-light-grey">
+    <h3 class="font-italiana uppercase text-center text-3xl p-5p mb-0 tracking-widest">Recently on the blog...</h3>
+    
+    <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0 relative">
+
+        {% for post in site.posts limit: 5 %}
+        
+            {% include post-loop-item.html %}
+
+        {% endfor %}
+        
+    </div>
+ </section>
