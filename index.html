@@ -1,17 +1,15 @@
 ---
 layout: default 
 banner:
-    image: /images/blog-bg-12.jpg
-    heading: A whole new world
-    subheading: Surfing teaches you to appreciate the finer things in life, to be present, live in the moment, and just breathe.
-current-location:
-    image: /images/blog-bg-14.jpg
-    location: Tuscany
+    image: /images/suns/sunset-2.jpeg
+    image-position: 50% 100%
+    heading: The Golden Hour
+    subheading: By Sara Schneider.
 seo: 
-    title: A Whole New World
+    title: The Golden Hour by Sara Schneider
     description: 
     keywords: 
-    social_image: /images/blog-bg-11.jpg
+    social_image: /images/headshots/8027.jpg
     hide-from-google: false
 --- 
 
@@ -19,60 +17,101 @@ seo:
  {% include hero-banner.html %}
 
 
- <!-- Fascinating heading about the site // hard coded -->
- <section class="grid md:grid-cols-2 items-center p-5p bg-light-grey border-y border-dark-grey">
+ <!-- Intro to Sara -->
+ <section class="grid md:grid-cols-2 items-center px-10p py-5p bg-light-grey">
 
-    <img src="/images/blog-bg-13.jpg" class="text-center md:p-5p max-h-80 w-full object-cover order-last md:order-first" alt="small collection of beach-themed belongings, including white sandals, a tan purse, a blue water bottle, and light blue swim suit.">
+    <img src="/images/headshots/8027.jpg" class="text-center md:p-5p max-h-80 w-full object-cover" alt="a headshot of Sara Schneider">
 
-    <div class="p-5p">
-        <h2 class="text-4xl font-italiana">A fascinating heading about the site</h3>
+    <div class="px-5p py-0">
+        <h2 class="text-4xl font-italiana">Sara inspires people to see themselves in a different light.</h3>
         <p class="font-montserrat text-base py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas temporibus aliquam rerum accusantium. Accusamus impedit ullam minima, iste sequi laudantium possimus ea porro minus culpa voluptatum enim necessitatibus dolore rerum. <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam illo possimus laborum nam quo sed animi cumque? Illo nihil porro laudantium ipsa pariatur excepturi, praesentium eveniet labore. Dignissimos, eligendi cupiditate.</p>
-        <a href="#" class="font-italiana border-b border-dark-grey uppercase hover:border-white py-2">Read more</a>
+        <a href="/about" class="font-italiana border-b border-dark-grey uppercase hover:border-white py-2">Read more</a>
     </div>
 
  </section>
 
 
+ <!-- Catholic background -->
+ <section class="grid md:grid-cols-2 items-center px-10p py-5p">
 
- <!-- upcoming travel destinations -->
- <section class="p-5p text-center">
-    <h3 class="font-italiana text-2xl uppercase tracking-widest pb-5p">Upcoming Travel Destinations</h3>
+    <div class="">
+        <h2 class="text-4xl font-italiana">Sara's Catholic Backgorund</h3>
+        <p class="font-montserrat text-base py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas temporibus aliquam rerum accusantium. Accusamus impedit ullam minima, iste sequi laudantium possimus ea porro minus culpa voluptatum enim necessitatibus dolore rerum. <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam illo possimus laborum nam quo sed animi cumque? Illo nihil porro laudantium ipsa pariatur excepturi, praesentium eveniet labore. Dignissimos, eligendi cupiditate.</p>
+        <!-- <a href="#" class="font-italiana border-b border-dark-grey uppercase hover:border-white py-2">Read more</a> -->
+    </div>
 
-    <div class="grid md:grid-cols-2 gap-10 items-center">
+    <img src="/images/suns/kids-1.jpeg" class="text-center md:p-5p max-h-80 w-full object-cover" alt="Silhouettes of 3 kids at sunset">
 
-        <ul class="grid divide-y divide-dark-grey border-y border-dark-grey font-montserrat">
-<!-- This references data pulled from a site level data file, entered in cloudcannon by the client. -->
-            {% for upcoming in site.data.destinations.upcoming %}
-            <li class="flex justify-between w-full py-5 ">
-                <p class="mb-0 leading-9 uppercase">{{ upcoming.location }}</p>
-                <p class="mb-0 leading-9">{{ upcoming.dates }}</p>
-            </li>
-            {% endfor %}
+ </section>
 
-        </ul>
+<!-- block quote banner -->
+<section class="h-[50vh] flex items-center bg-cover bg-bottom" style="background-image:url('/images/suns/sunset-1.jpeg');">
+        <h3 class="text-[4.3vw] editable font-italiana text-white pl-5p md:pr-40p">"Sometimes thinking about change is harder than the actual change."</h3>
+</section>
 
 
-<!-- This is pulled from the front matter in the home page -->
-        <div class="flex pl-5p items-center bg-[url('{{ page.current-location.image }}')] bg-center bg-cover relative min-h-50">
-            <p class="absolute bg-light-grey text-dark-grey left-0 bottom-20p font-italiana text-2xl leading-9 pl-1 pr-5 py-3 ">Currently in {{ page.current-location.location }}</p>
+<!-- services section -->
+<!-- <section>
+<h2 class="font-italiana text-4xl p-5p">Sara's Services</h2>
+
+
+
+    <div class="grid grid-cols-3 gap-5 items-center px-5 even:flex-col-reverse">
+    {% for item in site.data.services %}
+
+
+        <div>
+            <img src="{{item.image}}" class="h-[50vh] w-full object-cover object-center">
         </div>
 
+        <div class="col-span-2">
+            <h3 class="font-italiana text-2xl">{{item.header}}</h3>
+            <p class="text-base font-montserrat">{{item.description}}</p>
+            <a href="{{item.link}}" class="font-italiana border-b border-dark-grey uppercase hover:border-white py-2">Read more</a>
+        </div>
+
+    {% endfor %}
+</div>
+
+</section> -->
+
+
+<!-- services section v2 -->
+<section class="px-10p bg-light-grey py-5p">
+<h2 class="font-italiana text-4xl">Sara's Services</h2>
+
+<div class="grid grid-cols-5 gap-10 items-center">
+
+{% for item in site.data.services %}
+
+    {% capture thecycle %}{% cycle 'left', 'right' %}{% endcapture %}
+    {% if thecycle == 'left' %}
+
+    <div class="col-span-2 py-5p">
+
+        <h3 class="font-italiana text-2xl">{{item.header}}</h3>
+        <p class="text-base font-montserrat">{{item.description}}</p>
+        <a href="{{ item.link }}" class="font-italiana border-b border-dark-grey hover:border-white py-2 tracking-widest uppercase">Learn more</a>
 
     </div>
- </section>
 
+    <div class="bg-cover bg-center h-[50vh] w-full col-span-3" style="background-image: url('{{ item.image }}');"></div>
 
- <!-- recently on the blog -->
- <section class="bg-light-grey">
-    <h3 class="font-italiana uppercase text-center text-3xl p-5p mb-0 tracking-widest">Recently on the blog...</h3>
-    
-    <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0 relative">
+    {% else %}
 
-        {% for post in site.posts limit: 5 %}
-        
-            {% include post-loop-item.html %}
+    <div class="bg-cover bg-center h-[50vh] w-full col-span-3" style="background-image: url('{{ item.image }}');"></div>
 
-        {% endfor %}
-        
+    <div class="col-span-2 py-5p">
+
+        <h3 class="font-italiana text-2xl">{{ item.header }}</h3>
+        <p class="text-base font-montserrat">{{ item.description }}</p>
+        <a href="{{ item.link }}" class="font-italiana border-b border-dark-grey uppercase hover:border-white py-2 tracking-widest">Learn more</a>
+
     </div>
- </section>
+
+    {% endif %}
+
+{% endfor %}
+</div>
+</section>
+ 

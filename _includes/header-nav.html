@@ -1,10 +1,10 @@
-<nav class="md:flex md:grid-cols-2 items-center md:justify-between px-5 md:px-10 py-5 uppercase bg-light-grey">
+<nav class="flex items-center md:justify-between px-5 md:px-10 py-5 uppercase bg-light-grey">
     <div class="text-center md:text-left">
         <a href="/index" class="font-italiana mb-0 tracking-widest text-3xl border-b border-transparent text-dark-grey">LOGO</a>
     </div>
-    <div class="grid grid-cols-3 text-sm font-montserrat pt-5 md:pt-0">
+    <div class="flex text-sm font-montserrat pt-5 md:pt-0 space-x-10">
         {% for item in site.data.nav %}
-        <a href="{{item.link}}" class="mb-0 text-dark-grey text-center md:text-left">{{item.name}}</a>
+        <a href="{{item.link}}" class="px-5 py-1 mb-0 text-dark-grey text-center md:text-left">{{item.name}}</a>
         {% endfor %}
     </div>
 </nav>

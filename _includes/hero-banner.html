@@ -1,8 +1,8 @@
-<section class="flex pl-5p items-center min-h-[90vh] bg-center bg-cover relative text-white " style="background-image:url('{{ page.banner.image }}')">
+<section class="flex pl-5p items-center min-h-[90vh] bg-center bg-cover relative text-white" style="background-image:url('{{ page.banner.image }}'); background-position: {{page.banner.image-position}};">
 
-    <div class="max-w-xl">
+    <div class=" justify-[{{page.banner.text-align}}]">
         <p class="font-montserrat text-base uppercase tracking-widest">{{page.banner.supheading}}</p>
-        <h1 class="font-italiana text-7xl md:text-8xl tracking-widest">{{page.banner.heading}}</h1>
+        <h1 class="font-italiana text-7xl md:text-9xl tracking-widest">{{page.banner.heading}}</h1>
         <h2 class="font-montserrat text-base uppercase tracking-widest">{{page.banner.subheading}}</h2>
     </div>
 

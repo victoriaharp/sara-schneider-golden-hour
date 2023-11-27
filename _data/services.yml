@@ -1,0 +1,23 @@
+- image: /images/stock-4.jpg
+  header: Photography
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas temporibus aliquam rerum accusantium. Accusamus impedit ullam minima, iste sequi laudantium possimus ea porro minus culpa voluptatum enim necessitatibus dolore rerum.
+  link: /photography
+  thecycle: right
+
+- image: /images/stock-3.jpg
+  header: Graphic Design
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas temporibus aliquam rerum accusantium. Accusamus impedit ullam minima, iste sequi laudantium possimus ea porro minus culpa voluptatum enim necessitatibus dolore rerum.
+  link: /graphic-design
+  thecycle: left
+
+- image: /images/stock-2.jpg
+  header: Life Coaching
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas temporibus aliquam rerum accusantium. Accusamus impedit ullam minima, iste sequi laudantium possimus ea porro minus culpa voluptatum enim necessitatibus dolore rerum.
+  link: /life-coaching
+  thecycle: right
+
+- image: /images/stock-1.jpg
+  header: Speaking Engagements
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas temporibus aliquam rerum accusantium. Accusamus impedit ullam minima, iste sequi laudantium possimus ea porro minus culpa voluptatum enim necessitatibus dolore rerum.
+  link: /speaking-engagements
+  thecycle: left

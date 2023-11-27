@@ -44,6 +44,7 @@ module.exports = {
         '15p': '15%',
         '20p': '20%',
         '30p': '30%',
+        '40p': '40%',
         '45p': '45%',
         '50p': '50%',
         '60p': '60%',
@@ -79,7 +80,8 @@ module.exports = {
         'light-grey': '#F2EFEC',
         'medium-grey': '#E0DCD9',
         'dark-grey': '#1E1E1E',
-      }
+      },
+      
     },
   },
   plugins: [
