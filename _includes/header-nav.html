@@ -1,4 +1,4 @@
-<nav class="flex items-center justify-center md:justify-between px-5 md:px-10 py-5 uppercase bg-light-grey z-10">
+<!-- <nav class="flex items-center justify-center md:justify-between px-5 md:px-10 py-5 uppercase bg-light-grey z-10">
     <div class="text-center md:text-left">
         <a href="/index" class="font-italiana mb-0 tracking-widest text-3xl border-b border-transparent text-dark-grey"><img src="/images/icons/TGH-logo5v2.png" class="h-[75px]"></a>
     </div>
@@ -7,23 +7,22 @@
         <a href="{{item.link}}" class="px-5 py-1 mb-0 text-dark-grey text-left inline-block last:pr-0">{{item.name}}</a>
         {% endfor %}
     </div>
-</nav>
+</nav> -->
 
-<!-- 
-<nav class="flex items-center justify-between text-orange px-5p mt-5 z-10">
+<nav class="flex items-center justify-between text-orange px-5p  z-10">
 
-    <div class="">
-        <a href="/index" class="font-oranienbaum text-3xl border-b border-transparent">The Yoga Studio</a>
+    <div class="hidden md:block">
+        <a href="/index" class="font-italiana mb-0 tracking-widest text-3xl border-b border-transparent text-dark-grey"><img src="/images/icons/TGH-logo5v2.png" class="h-[75px]"></a>
     </div>
 
-    <div class="font-poppins grow uppercase text-right space-x-5 hidden md:block">
+    <div class="font-montserrat grow uppercase text-right space-x-5 hidden md:block">
 
         {% for item in site.data.nav %}
         <a href="{{item.link}}" class="text-left inline-block px-5 last:pr-0">{{item.name}}</a>
         {% endfor %}
 
     </div>
-</nav> -->
+</nav>
 
 
 <nav class="md:hidden">
@@ -32,9 +31,9 @@
         <span class="burger-middle"></span>
         <span class="burger-bottom"></span>
     </div>
-     <div class="burger-menu">
-      {% for item in site.data.nav %}
-          <a href="{{item.link}}" class="text-left inline-block px-5 last:pr-0">{{item.name}}</a>
-      {% endfor %}
+    <div class="burger-menu">
+    {% for item in site.data.nav %}
+        <a href="{{item.link}}" class="text-left inline-block px-5 last:pr-0 font-montserrat">{{item.name}}</a>
+    {% endfor %}
     </div>
-  </nav>
+</nav>

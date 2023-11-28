@@ -1,5 +1,5 @@
-<!-- services section v2 -->
-<section class="px-10p bg-light-grey py-5p">
+<!-- services section DESKTOP v2 -->
+<section class="px-10p bg-light-grey py-5p hidden md:block">
     <h2 class="font-italiana text-4xl">Sara's Services</h2>
     
     <div class="grid grid-cols-5 gap-10 items-center">
@@ -34,5 +34,24 @@
         {% endif %}
     
     {% endfor %}
+    </div>
+    </section>
+
+
+    <!-- services section MOBILE -->
+<section class="p-5p bg-light-grey block md:hidden">
+    <h2 class="font-italiana text-4xl">Sara's Services</h2>
+    
+    <div class="my-5">
+    
+        {% for item in site.data.services %}
+        <div class="bg-cover bg-center h-[50vh] w-full mt-5" style="background-image: url('{{ item.image }}');"></div>
+
+        <div class="mt-5 mb-20">
+            <h3 class="font-italiana text-2xl">{{item.header}}</h3>
+            <p class="text-base font-montserrat">{{item.description}}</p>
+            <a href="{{ item.link }}" class="font-italiana border-b border-dark-grey hover:border-white py-2 tracking-widest uppercase">Learn more</a>
+        </div>
+        {% endfor %}
     </div>
     </section>

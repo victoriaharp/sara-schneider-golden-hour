@@ -373,33 +373,6 @@ p {
   font-size: 3rem;
   line-height: 1;
 }
-/* danburger */
-/* memberspace special styling */
-ms-css-seed-with-revert :not(svg):not(g):not(path):not(circle):not(ellipse):not(rect):not(line):not(polyline):not(polygon):not(stop):not(iframe) {
-        width: initial !important;
-    }
-#memberspace-section #memberspace-login-form input {
-  width: 100%;
-  border-radius: 0px;
-  border-width: 0px;
-  border-bottom-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-#memberspace-section #memberspace-login-form label {
-  font-family: Montserrat, sans-serif;
-  font-weight: 200;
-  text-transform: uppercase;
-}
-#memberspace-section #memberspace-login-form ms-widget-ui {
-  display: block;
-  justify-content: flex-start;
-}
-#memberspace-login-form {
-  padding: 5%;
-}
-/* Forgot Email / forgot password text */
-body .MemberSpaceWidgetInternal__BrandedInterface_footer{display: none; }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -544,6 +517,9 @@ body .MemberSpaceWidgetInternal__BrandedInterface_footer{display: none; }
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
+.col-span-6 {
+  grid-column: span 6 / span 6;
+}
 .m-4 {
   margin: 1rem;
 }
@@ -554,6 +530,10 @@ body .MemberSpaceWidgetInternal__BrandedInterface_footer{display: none; }
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 .mt-5 {
   margin-top: 1.25rem;
@@ -569,6 +549,12 @@ body .MemberSpaceWidgetInternal__BrandedInterface_footer{display: none; }
 }
 .mt-5p {
   margin-top: 5%;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+.mb-20 {
+  margin-bottom: 5rem;
 }
 .block {
   display: block;
@@ -954,6 +940,13 @@ body .MemberSpaceWidgetInternal__BrandedInterface_footer{display: none; }
 .text-\[4vw\] {
   font-size: 4vw;
 }
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+.text-\[6\.4vw\] {
+  font-size: 6.4vw;
+}
 .font-light {
   font-weight: 300;
 }
@@ -977,12 +970,96 @@ body .MemberSpaceWidgetInternal__BrandedInterface_footer{display: none; }
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-\[xl\] {
+  color: xl;
+}
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+/* danburger */
+/* hamburger menu styles */
+.burger-button {
+    position:fixed;
+    top: 2vh;
+    right: 2vh;
+    z-index: 90;
+    padding: 8px;
+  }
+/*this is where you can change the color of the buttons*/
+.burger-button span{
+    width: 40px;
+    border: 2px solid rgb(30 30 30);
+    background-color: rgb(30 30 30);
+    display: block;
+    border-radius: 22px;
+    transition: 2s;
+  }
+.burger-button.active span {
+  --tw-border-opacity: 1;
+  border-color: rgb(30 30 30 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 30 30 / var(--tw-bg-opacity));
+}
+.burger-top, .burger-bottom{
+    position: absolute;
+  }
+.burger-top{
+    top: -02px;
+  }
+.burger-bottom{
+    bottom: -02px;
+  }
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+    position: absolute;
+    top: 8px;
+    transform: rotateZ(45deg);
+  }
+.burger-button.active .burger-middle{
+    transform: rotateZ(180);
+    border-color: rgba(0,0,0,0);
+    background-color:rgba(0,0,0,0);
+  }
+/* make sure this has the same bottom as the burger button has padding*/
+.burger-button.active .burger-bottom{
+    position: absolute;
+    bottom: 8px;
+    transform: rotateZ(-45deg);
+  }
+.burger-menu {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 239 236 / var(--tw-bg-opacity));
+      display: flex;
+      position: fixed;
+      top: 0vh;
+      left:100vw;
+      right: -100vw;
+      bottom: 0vh;
+      padding:5px;
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+      z-index: 80;
+      transition:1s;
+      align-content:space-around;
+    justify-content:space-around;
+    flex-direction:column;
+}
+.burger-menu.active{
+    left:50vw;
+    right:0;
+  }
+.burger-menu a {
+  --tw-text-opacity: 1;
+  color: rgb(30 30 30 / var(--tw-text-opacity));
+    text-decoration: none;
+    font-size: 20px;
+    display:block;
+    padding:5px 15px;
+    text-align:center;
+    white-space:nowrap;
 }
 
 /* Custom CSS */
@@ -994,32 +1071,31 @@ html {
 
 /* ----------- Default Styles to apply to the whole project  --------- */
 
-
 /* ----------- ADDITIONAL COMPONENTS  --------- */
-
+  
 .last\:pr-0:last-child {
   padding-right: 0px;
 }
-
+  
 .even\:flex-col-reverse:nth-child(even) {
   flex-direction: column-reverse;
 }
-
+  
 .hover\:border-white:hover {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
-
+  
 .hover\:bg-dark-grey:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(30 30 30 / var(--tw-bg-opacity));
 }
-
+  
 .hover\:text-light-grey:hover {
   --tw-text-opacity: 1;
   color: rgb(242 239 236 / var(--tw-text-opacity));
 }
-
+  
 @media (min-width: 768px) {
   .md\:order-first {
     order: -9999;
@@ -1030,8 +1106,20 @@ html {
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+  .md\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
   .md\:ml-auto {
     margin-left: auto;
+  }
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+  .md\:mb-0 {
+    margin-bottom: 0px;
   }
   .md\:block {
     display: block;
@@ -1058,6 +1146,9 @@ html {
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
   .md\:justify-end {
     justify-content: flex-end;
   }
@@ -1075,6 +1166,14 @@ html {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
+  .md\:px-10p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .md\:py-5p {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
   .md\:pl-0 {
     padding-left: 0px;
   }
@@ -1086,6 +1185,14 @@ html {
   }
   .md\:pr-40p {
     padding-right: 40%;
+  }
+  @media (min-width: 768px) {
+    .md\:md\:pr-40p {
+      padding-right: 40%;
+    }
+  }
+  .md\:pl-10p {
+    padding-left: 10%;
   }
   .md\:text-left {
     text-align: left;
@@ -1107,5 +1214,11 @@ html {
   .md\:text-8xl {
     font-size: 6rem;
     line-height: 1;
+  }
+  .md\:text-\[4\.3vw\] {
+    font-size: 4.3vw;
+  }
+  .md\:text-\[4vw\] {
+    font-size: 4vw;
   }
 }
