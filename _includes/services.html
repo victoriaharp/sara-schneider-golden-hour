@@ -1,0 +1,38 @@
+<!-- services section v2 -->
+<section class="px-10p bg-light-grey py-5p">
+    <h2 class="font-italiana text-4xl">Sara's Services</h2>
+    
+    <div class="grid grid-cols-5 gap-10 items-center">
+    
+    {% for item in site.data.services %}
+    
+        {% capture thecycle %}{% cycle 'left', 'right' %}{% endcapture %}
+        {% if thecycle == 'left' %}
+    
+        <div class="col-span-2 py-5p">
+    
+            <h3 class="font-italiana text-2xl">{{item.header}}</h3>
+            <p class="text-base font-montserrat">{{item.description}}</p>
+            <a href="{{ item.link }}" class="font-italiana border-b border-dark-grey hover:border-white py-2 tracking-widest uppercase">Learn more</a>
+    
+        </div>
+    
+        <div class="bg-cover bg-center h-[50vh] w-full col-span-3" style="background-image: url('{{ item.image }}');"></div>
+    
+        {% else %}
+    
+        <div class="bg-cover bg-center h-[50vh] w-full col-span-3" style="background-image: url('{{ item.image }}');"></div>
+    
+        <div class="col-span-2 py-5p">
+    
+            <h3 class="font-italiana text-2xl">{{ item.header }}</h3>
+            <p class="text-base font-montserrat">{{ item.description }}</p>
+            <a href="{{ item.link }}" class="font-italiana border-b border-dark-grey uppercase hover:border-white py-2 tracking-widest">Learn more</a>
+    
+        </div>
+    
+        {% endif %}
+    
+    {% endfor %}
+    </div>
+    </section>

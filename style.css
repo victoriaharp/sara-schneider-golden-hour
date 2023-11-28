@@ -64,6 +64,91 @@ html {
     }
 
 
+    /* danburger */
+
+/* hamburger menu styles */
+
+.burger-button {
+    position:fixed;
+    top: 2vh;
+    right: 2vh;
+    z-index: 90;
+    padding: 8px;
+  }
+  /*this is where you can change the color of the buttons*/
+  .burger-button span{
+    width: 40px;
+    border: 2px solid var(--momence-primary-500);
+    background-color: #C97324;
+    display: block;
+    border-radius: 22px;
+    transition: 2s;
+  }
+  .burger-button.active span{
+    @apply bg-orange border-orange
+  }
+  
+  .burger-top, .burger-bottom{
+    position: absolute;
+  }
+  
+  .burger-top{
+    top: -02px;
+  }
+  
+  .burger-bottom{
+    bottom: -02px;
+  }
+  /* make sure this has the same top as the burger button has padding*/
+  .burger-button.active .burger-top{
+    position: absolute;
+    top: 8px;
+    transform: rotateZ(45deg);
+  }
+  
+  .burger-button.active .burger-middle{
+    transform: rotateZ(2700deg);
+    border-color: rgba(0,0,0,0);
+    background-color:rgba(0,0,0,0);
+  }
+  
+  /* make sure this has the same bottom as the burger button has padding*/
+  
+  .burger-button.active .burger-bottom{
+    position: absolute;
+    bottom: 8px;
+    transform: rotateZ(-45deg);
+  }
+  
+  .burger-menu {
+      @apply bg-beige;
+      display: flex;
+      position: fixed;
+      top: 0vh;
+      left:100vw;
+      right: -100vw;
+      bottom: 0vh;
+      padding:5px;
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+      z-index: 80;
+      transition:1s;
+      align-content:space-around;
+    justify-content:space-around;
+    flex-direction:column;
+  }
+  .burger-menu.active{
+    left:50vw;
+    right:0;
+  }
+  .burger-menu a {
+    @apply text-orange;
+    text-decoration: none;
+    font-size: 20px;
+    display:block;
+    padding:5px 15px;
+    text-align:center;
+    white-space:nowrap;
+
     /* memberspace special styling */
     ms-css-seed-with-revert :not(svg):not(g):not(path):not(circle):not(ellipse):not(rect):not(line):not(polyline):not(polygon):not(stop):not(iframe) {
         width: initial !important;

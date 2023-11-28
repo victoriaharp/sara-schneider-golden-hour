@@ -26,30 +26,18 @@ seo:
     <img src="/images/headshots/8027.jpg" class="text-center md:p-5p max-h-80 w-full object-cover" alt="a headshot of Sara Schneider">
 
     <div class="px-5p py-0">
-        <h2 class="text-4xl font-italiana">Sara inspires people to see themselves in a different light.</h3>
-        <p class="font-montserrat text-base py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas temporibus aliquam rerum accusantium. Accusamus impedit ullam minima, iste sequi laudantium possimus ea porro minus culpa voluptatum enim necessitatibus dolore rerum. <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam illo possimus laborum nam quo sed animi cumque? Illo nihil porro laudantium ipsa pariatur excepturi, praesentium eveniet labore. Dignissimos, eligendi cupiditate.</p>
+        <h2 class="text-4xl font-italiana editable">Sara inspires people to see themselves in a different light.</h3>
+        <p class="editable font-montserrat text-base py-5">The Golden Hour is a brand of specialized services utilized individually or collectively to frame your life with intention, joy, and purpose. Through aspects of photography as her metaphor, Sara radiates interior joy, captures connection, and leaves each room a little brighter than she found it. Whether you are seeking a life coach, photographer, or speaker, Sara, through The Golden Hour, will light you up in a way that assures you, you CAN do hard things.
+        </p>
         <a href="/about" class="font-italiana border-b border-dark-grey uppercase hover:border-white py-2">Read more</a>
     </div>
 
  </section>
 
 
- <!-- Catholic background -->
- <section class="grid md:grid-cols-2 items-center px-10p py-5p">
-
-    <div class="">
-        <h2 class="text-4xl font-italiana">Sara's Catholic Backgorund</h3>
-        <p class="font-montserrat text-base py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas temporibus aliquam rerum accusantium. Accusamus impedit ullam minima, iste sequi laudantium possimus ea porro minus culpa voluptatum enim necessitatibus dolore rerum. <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam illo possimus laborum nam quo sed animi cumque? Illo nihil porro laudantium ipsa pariatur excepturi, praesentium eveniet labore. Dignissimos, eligendi cupiditate.</p>
-        <!-- <a href="#" class="font-italiana border-b border-dark-grey uppercase hover:border-white py-2">Read more</a> -->
-    </div>
-
-    <img src="/images/suns/kids-1.jpeg" class="text-center md:p-5p max-h-80 w-full object-cover" alt="Silhouettes of 3 kids at sunset">
-
- </section>
-
 <!-- block quote banner -->
 <section class="h-[50vh] flex items-center bg-cover bg-bottom" style="background-image:url('{{page.quote_image}}');">
-        <h3 class="text-[4.3vw] editable font-italiana text-white pl-5p md:pr-40p">"{{page.quote}}" -{{page.quote-author}}</h3>
+        <h3 class="text-[4.3vw] editable font-italiana text-white pl-10p md:pr-40p">"{{page.quote}}" -{{page.quote-author}}</h3>
 </section>
 
 
@@ -79,42 +67,5 @@ seo:
 </section> -->
 
 
-<!-- services section v2 -->
-<section class="px-10p bg-light-grey py-5p">
-<h2 class="font-italiana text-4xl">Sara's Services</h2>
-
-<div class="grid grid-cols-5 gap-10 items-center">
-
-{% for item in site.data.services %}
-
-    {% capture thecycle %}{% cycle 'left', 'right' %}{% endcapture %}
-    {% if thecycle == 'left' %}
-
-    <div class="col-span-2 py-5p">
-
-        <h3 class="font-italiana text-2xl">{{item.header}}</h3>
-        <p class="text-base font-montserrat">{{item.description}}</p>
-        <a href="{{ item.link }}" class="font-italiana border-b border-dark-grey hover:border-white py-2 tracking-widest uppercase">Learn more</a>
-
-    </div>
-
-    <div class="bg-cover bg-center h-[50vh] w-full col-span-3" style="background-image: url('{{ item.image }}');"></div>
-
-    {% else %}
-
-    <div class="bg-cover bg-center h-[50vh] w-full col-span-3" style="background-image: url('{{ item.image }}');"></div>
-
-    <div class="col-span-2 py-5p">
-
-        <h3 class="font-italiana text-2xl">{{ item.header }}</h3>
-        <p class="text-base font-montserrat">{{ item.description }}</p>
-        <a href="{{ item.link }}" class="font-italiana border-b border-dark-grey uppercase hover:border-white py-2 tracking-widest">Learn more</a>
-
-    </div>
-
-    {% endif %}
-
-{% endfor %}
-</div>
-</section>
+{% include services.html %}
  
