@@ -5,6 +5,9 @@ banner:
     image-position: 50% 100%
     heading: The Golden Hour
     subheading: By Sara Schneider.
+quote_image: /images/suns/sunset-1.jpeg
+quote: In the darkest of times, joy is a beacon of light that guides us through the storm.
+quote-author: Brene Brown
 seo: 
     title: The Golden Hour by Sara Schneider
     description: 
@@ -45,8 +48,8 @@ seo:
  </section>
 
 <!-- block quote banner -->
-<section class="h-[50vh] flex items-center bg-cover bg-bottom" style="background-image:url('/images/suns/sunset-1.jpeg');">
-        <h3 class="text-[4.3vw] editable font-italiana text-white pl-5p md:pr-40p">"Sometimes thinking about change is harder than the actual change."</h3>
+<section class="h-[50vh] flex items-center bg-cover bg-bottom" style="background-image:url('{{page.quote_image}}');">
+        <h3 class="text-[4.3vw] editable font-italiana text-white pl-5p md:pr-40p">"{{page.quote}}" -{{page.quote-author}}</h3>
 </section>
 
 
