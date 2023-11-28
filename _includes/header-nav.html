@@ -11,11 +11,11 @@
 
 <nav class="flex items-center justify-between text-orange px-5p  z-10">
 
-    <div class="hidden md:block">
+    <div class="hidden lg:block">
         <a href="/index" class="font-italiana mb-0 tracking-widest text-3xl border-b border-transparent text-dark-grey"><img src="/images/icons/TGH-logo5v2.png" class="h-[75px]"></a>
     </div>
 
-    <div class="font-montserrat grow uppercase text-right space-x-5 hidden md:block">
+    <div class="font-montserrat grow uppercase text-right space-x-5 hidden lg:block">
 
         {% for item in site.data.nav %}
         <a href="{{item.link}}" class="text-left inline-block px-5 last:pr-0">{{item.name}}</a>
@@ -25,7 +25,7 @@
 </nav>
 
 
-<nav class="md:hidden">
+<nav class="lg:hidden">
     <div class="burger-button">
         <span class="burger-top"></span>
         <span class="burger-middle"></span>
