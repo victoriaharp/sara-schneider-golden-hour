@@ -373,9 +373,21 @@ p {
   font-size: 3rem;
   line-height: 1;
 }
+/* overlays for hero banner images */
 .overlay {
-        background-color: rgba(0,0,0,0.2);
-        z-index: 10;
+        position: relative;
+      }
+.overlay::before {
+        content: ""; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+.overlay > * {
+        position: relative;
       }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -601,6 +613,12 @@ p {
 }
 .h-\[80vh\] {
   height: 80vh;
+}
+.h-\[full\] {
+  height: full;
+}
+.h-\[20vh\] {
+  height: 20vh;
 }
 .max-h-90 {
   max-height: 90vh;

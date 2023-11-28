@@ -2,25 +2,26 @@
 layout: default 
 banner:
     image: /images/headshots/8790.jpg
+    overlay: true
     image-position: 50% 50%
     heading: What is Coahching?
     subheading: 
 reasons:
   - image: /images/color-blocks/yellow.png
     reason: Clarity & Goal Setting
-    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium id rerum architecto. Eum nihil perferendis ratione amet unde blanditiis eveniet cupiditate deserunt nostrum, excepturi in mollitia illo nemo. 
+    description: Gain clarity on your values, strengths, and goals by setting realistic and achievable goals, and then create a strategic plan to reach them. With Sara’s guidance, you can develop a clear vision for your life and take focused action steps towards achieving it.
   - image: /images/color-blocks/light-blue.png
     reason: Growth & Development
-    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium id rerum architecto. Eum nihil perferendis ratione amet unde blanditiis eveniet cupiditate deserunt nostrum, excepturi in mollitia illo nemo. 
+    description: Identify and overcome limiting beliefs, self-sabotaging patterns, and barriers that may be holding you back from reaching your full potential by developing new perspectives, building self-awareness, and enhancing your self-confidence. Sara will empower you to grow and evolve as an individual, and become the best version of yourself.
   - image: /images/color-blocks/burnt-orange.png
     reason: Accountability & Motivation
-    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium id rerum architecto. Eum nihil perferendis ratione amet unde blanditiis eveniet cupiditate deserunt nostrum, excepturi in mollitia illo nemo.
+    description: Provides the necessary accountability and motivation to stay committed to your goals by holding you responsible for your actions and progress, and help you stay on track even when facing challenges or setbacks. Sara can provide valuable support, encouragement, and motivation to help you stay motivated, overcome obstacles, and maintain momentum towards your desired outcomes.
   - image: /images/color-blocks/dark-blue.png
-    reason: Reason 4
-    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium id rerum architecto. Eum nihil perferendis ratione amet unde blanditiis eveniet cupiditate deserunt nostrum, excepturi in mollitia illo nemo. 
+    reason: Improved Relationships & Communication
+    description: Improve your interpersonal skills and relationships through developing effective communication skills, enhancing your emotional intelligence, and building healthy relationships with others. Sara’s guidance on navigating difficult conversations, resolving conflicts, and establishing boundaries, can lead to more meaningful connections and improved relationships in both personal and professional aspects of life. 
   - image: /images/color-blocks/red.png
-    reason: Reason 5
-    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium id rerum architecto. Eum nihil perferendis ratione amet unde blanditiis eveniet cupiditate deserunt nostrum, excepturi in mollitia illo nemo. 
+    reason: Career & Business Success
+    description: If you're looking to advance your career or start a business, coaching can provide valuable guidance and support. Sara can help you identify your strengths and passions, set career or business goals, create action plans, and develop strategies for success. 
 seo: 
     title: The Golden Hour by Sara Schneider | Coaching
     description: 
@@ -34,15 +35,15 @@ seo:
 
 
  <!-- Info section -->
- <section class="grid grid-cols-2 px-10p py-5p items-center">
-    <div>
+ <section class="grid grid-cols-2 gap-10 px-10p py-5p items-center">
+    <div class="">
         <h3 class="font-italiana text-4xl">Life Coaches...</h3>
         <p class="font-montserrat text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium id rerum architecto. Eum nihil perferendis ratione amet unde blanditiis eveniet cupiditate deserunt nostrum, excepturi in mollitia illo nemo. Ratione, tempora.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem tenetur vero magnam, temporibus, eos, unde aliquam necessitatibus molestiae itaque fugiat aspernatur! Sapiente dolores error nobis eaque ullam dignissimos commodi?</p>
     </div>
     <img src="/images/suns/sunset-6.jpeg" class="object-cover object-center w-full h-[80vh]">
  </section>
 
- <section class="grid grid-cols-2 gap-10 px-10p pb-5p items-center">
+ <section class="grid grid-cols-2 gap-10 px-10p pb-5p items-center bg-light-grey">
 
     <img src="/images/suns/sunset-1.jpeg" class="object-cover object-center w-full h-[80vh]">
 
@@ -58,18 +59,18 @@ seo:
 
  <!-- horizontal scroll gallery -->
 <section class="">
-    <div class="md:flex py-5p mx-5p">
+    <div class="md:flex py-5p px-10p">
         <div class="md:flex text-left">
             <h2 class="uppercase font-italiana text-4xl md:rotate-text-180">5 Reasons to Hire a Coach</h2> 
         </div>
     </div> 
 
 
-    <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll px-0 items-center">
+    <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll px-0 border-b border-dark-grey pb-5">
         {% for item in page.reasons %}
         <div class="basis-[30%] 3xl:basis-[20%] shrink-0 relative">
-            <img src="{{item.image}}" class="grow object-cover object-center inset-0 w-full h-full">
-            <h4 class="font-italiana text-2xl border-b border-black pb-5">{{item.reason}}</h4>
+            <img src="{{item.image}}" class="grow object-cover object-center inset-0 w-full h-[20vh]">
+            <h4 class="text-center font-italiana text-2xl border-b border-black pb-5">{{item.reason}}</h4>
             <p class="font-montserrat">{{item.description}}</p>
         </div>
         {% endfor %}
