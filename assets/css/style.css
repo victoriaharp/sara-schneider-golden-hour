@@ -373,6 +373,10 @@ p {
   font-size: 3rem;
   line-height: 1;
 }
+.overlay {
+        background-color: rgba(0,0,0,0.2);
+        z-index: 10;
+      }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;

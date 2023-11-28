@@ -1,4 +1,4 @@
-<section class="flex pl-5p items-center min-h-[90vh] bg-center bg-cover relative text-white" style="background-image:url('{{ page.banner.image }}'); background-position: {{page.banner.image-position}};">
+<section class="flex pl-5p items-center min-h-[90vh] bg-center bg-cover relative text-white {% if page.overlay == yes %} overlay {% endif %} " style="background-image:url('{{ page.banner.image }}'); background-position: {{page.banner.image-position}};">
 
     <div class=" justify-[{{page.banner.text-align}}]">
         <p class="font-montserrat text-base uppercase tracking-widest">{{page.banner.supheading}}</p>
@@ -7,3 +7,5 @@
     </div>
 
 </section>
+
+
