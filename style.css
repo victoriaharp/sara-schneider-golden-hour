@@ -82,6 +82,21 @@ html {
         position: relative;
       }
 
+      .button{
+        font-family: 'Italiana', sans-serif;
+        text-transform: uppercase;
+        color: rgb(30 30 30);
+        background-color: rgb(242 239 236);
+        border: 1px solid rgb(30 30 30);
+        padding: 1.25rem 0.75rem;
+      }
+      .button:hover{
+        font-family: 'Italiana', sans-serif;
+        text-transform: uppercase;
+        color: rgb(242 239 236);
+        background-color: rgb(30 30 30);
+        border: 1px solid rgb(242 239 236);
+      }
 }
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */

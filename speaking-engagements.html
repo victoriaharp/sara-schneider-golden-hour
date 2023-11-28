@@ -1,0 +1,53 @@
+---
+layout: default 
+banner:
+    image: /images/headshots/8421.jpg
+    overlay: true
+    image-position: 50% 50%
+    heading: Speaking Engagements
+    subheading: 
+pricing:
+  - option: Webinar/Zoom guest
+    price: $225
+  - option: In person, less than one hour
+    price: $425
+  - option: In person, less than two hours
+    price: $625
+image: /images/suns/sunset-7.jpeg
+seo: 
+    title: The Golden Hour by Sara Schneider | Coaching
+    description: 
+    keywords: 
+    social_image: /images/headshots/8421.jpg
+    hide-from-google: false
+--- 
+<!-- default includes header-nav.html -->
+{% include hero-banner.html %}
+<section class="px-10p py-5p">
+    <h3 class="font-italiana text-4xl">Heading</h3>
+    <p class="font-montserrat">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat expedita fugiat laborum deleniti corrupti dolore numquam suscipit voluptatem consectetur sapiente? Voluptatum distinctio dignissimos delectus eum totam possimus vitae quasi itaque. </p>
+</section>
+<div class="grid md:grid-cols-2 gap-20 items-center px-10p pb-5p">
+
+    <ul class="grid divide-y divide-dark-grey border-y border-dark-grey font-montserrat">
+<!-- This references data pulled from a site level data file, entered in cloudcannon by the client. -->
+        {% for item in page.pricing %}
+        <li class="flex justify-between w-full py-5 ">
+            <p class="mb-0 leading-9 uppercase">{{ item.option }}</p>
+            <p class="mb-0 leading-9">{{ item.price }}</p>
+        </li>
+        {% endfor %}
+
+        <li class="py-5">
+            For special events, retreats, half-day seminars or to book something specific, specific outreach is requested. Please send a detailed email to Sara at hello@sara-schneider.com.
+
+        </li>
+    </ul>
+
+
+<!-- This is pulled from the front matter in the home page -->
+    <div class="items-center bg-[url('{{ page.image }}')] bg-center bg-cover relative min-h-50">
+    </div>
+
+
+</div>

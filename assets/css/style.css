@@ -389,6 +389,21 @@ p {
 .overlay > * {
         position: relative;
       }
+.button{
+        font-family: 'Italiana', sans-serif;
+        text-transform: uppercase;
+        color: rgb(30 30 30);
+        background-color: rgb(242 239 236);
+        border: 1px solid rgb(30 30 30);
+        padding: 1.25rem 0.75rem;
+      }
+.button:hover{
+        font-family: 'Italiana', sans-serif;
+        text-transform: uppercase;
+        color: rgb(242 239 236);
+        background-color: rgb(30 30 30);
+        border: 1px solid rgb(242 239 236);
+      }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -540,10 +555,6 @@ p {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
-.mx-5p {
-  margin-left: 5%;
-  margin-right: 5%;
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -613,9 +624,6 @@ p {
 }
 .h-\[80vh\] {
   height: 80vh;
-}
-.h-\[full\] {
-  height: full;
 }
 .h-\[20vh\] {
   height: 20vh;
@@ -794,6 +802,18 @@ p {
 .bg-\[url\(\'\/images\/icons\/TGHrays\.png\'\)\] {
   background-image: url('/images/icons/TGHrays.png');
 }
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+.bg-\[url\(\'\/images\/suns\/sunset-4\.jpeg\'\)\] {
+  background-image: url('/images/suns/sunset-4.jpeg');
+}
+.bg-\[url\(\'\/images\/suns\/sunset-16\.jpeg\'\)\] {
+  background-image: url('/images/suns/sunset-16.jpeg');
+}
+.bg-\[url\(\'\/images\/suns\/sunset-7\.jpeg\'\)\] {
+  background-image: url('/images/suns/sunset-7.jpeg');
+}
 .bg-cover {
   background-size: cover;
 }
@@ -802,6 +822,9 @@ p {
 }
 .bg-bottom {
   background-position: bottom;
+}
+.bg-top {
+  background-position: top;
 }
 .object-cover {
   -o-object-fit: cover;
@@ -996,6 +1019,11 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 /* danburger */
 /* hamburger menu styles */
 .burger-button {
@@ -1100,6 +1128,16 @@ html {
 .hover\:border-white:hover {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+  
+.hover\:border-light-grey:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(242 239 236 / var(--tw-border-opacity));
+}
+  
+.hover\:border-dark-grey:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(30 30 30 / var(--tw-border-opacity));
 }
   
 .hover\:bg-dark-grey:hover {
