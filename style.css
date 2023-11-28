@@ -62,7 +62,9 @@ html {
     .sidebar-content blockquote p{
         @apply text-5xl font-italiana text-left ;
     }
-
+    .overlay {
+        background-color: rgba(0,0,0,0.2);
+      }
 
 }
 

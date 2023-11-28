@@ -1,0 +1,42 @@
+---
+layout: default
+banner:
+    image: /images/family-photos/family-10.jpg
+    image-position: 50% 50%
+    heading: Families
+    subheading:
+senior-photos:
+
+    - photo_image: /images/family-photos/family-16.jpg
+    - photo_image: /images/family-photos/family-17.jpg
+    - photo_image: /images/family-photos/family-14.jpg
+    - photo_image: /images/family-photos/family-2.jpg
+    - photo_image: /images/family-photos/family-3.jpg
+    - photo_image: /images/family-photos/family-9.jpg
+    - photo_image: /images/family-photos/family-5.jpg
+    - photo_image: /images/family-photos/family-15.jpg
+    - photo_image: /images/family-photos/family-19.jpg
+    - photo_image: /images/family-photos/family-10.jpg
+seo:
+    title: The Golden Hour by Sara Schneider | Photography
+    description:
+    keywords:
+    social_image: /images/headshots/8706.jpg
+    hide-from-google: false
+---
+<!-- default includes header-nav.html -->
+{% include hero-banner.html %}
+
+<section class="px-10p pt-5p">
+  <h3 class="font-italiana text-4xl mb-5p">Family Photos Gallery</h3>
+  
+</section>
+<section class="px-10p pb-5p">
+	<div class="columns-2 md:columns-3">
+	{% for item in page.senior-photos %}
+	
+		{% include photo-loop-item-free.html %}
+	
+	{% endfor %}
+	</div>
+</section>

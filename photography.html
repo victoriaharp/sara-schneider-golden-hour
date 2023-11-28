@@ -16,11 +16,25 @@ seo:
 <!-- default includes header-nav.html -->
  {% include hero-banner.html %}
 
- <section class="grid grid-cols-2 gap-10 items-center p-5p ">
+ <section class="grid grid-cols-2 gap-10 items-center p-10p ">
     <div>
         <h3 class="font-italiana text-4xl">High School Seniors</h3>
-        <p class="font-montserrat text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat distinctio eaque assumenda, veritatis odit inventore harum non reiciendis quidem nam rerum minus eius atque dolore, saepe rem hic repellendus incidunt.</p>
-        <a href="/seniors-gallery.html" class="font-italiana border-b border-dark-grey uppercase hover:border-white py-2">Inquire & Schedule Your Session</a>
+
+            <div class=" py-5p">
+              <h4 class="font-italiana text-xl editable">Option 1</h4>
+              <p class="font-montserrat editable">60-minute session at one location with 2 outfit changes. This option will leave you with 50+ digital images via online gallery. Payment is due at the time of booking.</p>
+              <p class="text-xl font-montserrat">$375</p>
+            </div>
+            <div class="py-5p">
+              <h4 class="font-italiana text-xl editable">Option 2</h4>
+              <p class="font-montserrat editable">90-minute session at two locations of your choosing with 4 outfit changes. This option will leave you with 80+ digital images via online gallery and a 30 page soft-sided commemorative album. Payment is due at the time of booking.</p>
+              <p class="text-xl font-montserrat">$700</p>
+            </div>
+
+        <div class="inline space-x-5">
+            <a href="/seniors-gallery.html" class="font-italiana border  px-5 py-3 border-dark-grey uppercase hover:bg-light-grey hover:text-dark-grey">Gallery</a>
+            <a href="#" class="font-italiana border px-5 py-3 border-dark-grey uppercase hover:bg-light-grey hover:text-dark-grey">Book Now</a>
+        </div>
     </div>
     <div>
         <img src="/images/senior-photos/LeahK-33.jpg" class="inset-0 w-full max-h-[75vh] object-cover object-center">
@@ -29,16 +43,22 @@ seo:
 
 
 <!-- to do: add slider carousel and fix the heading justification -->
- <section class="grid grid-cols-2 gap-5 items-center p-5p bg-light-grey">
+ <section class="grid grid-cols-2 gap-5 items-center p-10p bg-light-grey">
 
     <div>
-        <img src="/images/family-photos/WinRhino-34.jpg" class="inset-0 w-full h-full object-cover object-center max-h-[75vh]">
+        <img src="/images/family-photos/family-18.jpg" class="inset-0 w-full object-cover object-center max-h-[75vh]">
     </div>
 
-    <div>
-        <h3 class="font-italiana text-4xl">Families</h3>
-        <p class="font-montserrat text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat distinctio eaque assumenda, veritatis odit inventore harum non reiciendis quidem nam rerum minus eius atque dolore, saepe rem hic repellendus incidunt.</p>
-        <a href="/families-gallery.html" class="font-italiana border-b border-dark-grey uppercase hover:border-white py-2">Inquire & Schedule Your Session</a>
+    <div class="">
+        <div class="py-5p">
+            <h3 class="font-italiana text-4xl">Families</h3>
+            <p class="font-montserrat text-base">Photography for families is available in mini sessions. Mini sessions are 20-minute shoots on a predetermined date with a predetermined location that allows for group booking. Sessions typically yield 35+ images that are delivered via an online gallery with downloads and printing rights. Payment is due at the time of booking.
+            <p class="text-xl font-montserrat">$375</p>
+        </div>
+        <div class="inline space-x-5">
+            <a href="/families-gallery.html" class="font-italiana border  px-5 py-3 border-dark-grey uppercase hover:bg-light-grey hover:text-dark-grey">Gallery</a>
+            <a href="#" class="font-italiana border px-5 py-3 border-dark-grey uppercase hover:bg-light-grey hover:text-dark-grey">Book Now</a>
+        </div>
     </div>
     
  </section>

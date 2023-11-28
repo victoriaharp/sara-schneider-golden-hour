@@ -1,0 +1,50 @@
+---
+layout: default
+banner:
+    image: /images/icons/circlerainbow.png
+    image-position: 50% 43%
+    heading: Graphic Design
+    subheading:
+pricing:
+    - option: Logo Design
+      price: $250
+    - option: Instagram Graphics
+      price: $325
+    - option: Informational
+      price: $450
+    - option: Web Graphics
+      price: $575
+graphic: /images/icons/TGHrays.png
+seo:
+    title: The Golden Hour by Sara Schneider | Graphic Design
+    description:
+    keywords:
+    social_image: /images/headshots/8706.jpg
+    hide-from-google: false
+---
+<!-- default includes header-nav.html -->
+{% include hero-banner.html %}
+<section class="px-10p py-5p">
+    <h3 class="font-italiana text-4xl">Heading?</h3>
+    <p class="font-montserrat">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia temporibus doloribus a aliquam nam quis quod veniam perspiciatis. Blanditiis vitae veritatis quis tempora placeat iste sapiente consectetur odio magnam eos?</p>
+</section>
+<div class="grid md:grid-cols-2 gap-20 items-center px-10p py-5p">
+
+    <ul class="grid divide-y divide-dark-grey border-y border-dark-grey font-montserrat">
+<!-- This references data pulled from a site level data file, entered in cloudcannon by the client. -->
+        {% for item in page.pricing %}
+        <li class="flex justify-between w-full py-5 ">
+            <p class="mb-0 leading-9 uppercase">{{ item.option }}</p>
+            <p class="mb-0 leading-9">{{ item.price }}</p>
+        </li>
+        {% endfor %}
+
+    </ul>
+
+
+<!-- This is pulled from the front matter in the home page -->
+    <div class="items-center bg-[url('{{ page.graphic }}')] bg-center bg-cover relative min-h-50">
+    </div>
+
+
+</div>
