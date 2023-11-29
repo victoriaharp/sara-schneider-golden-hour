@@ -2,11 +2,11 @@
 layout: default
 banner:
     image: 
-    supheading: shop our
+    supheading: shop the golden hour's
     heading: Curated Collection
-    subheading: Shopping our travel guides and presets teaches you to appreciate the finer things in life, to be present, live in the moment, and just breathe.
+    subheading: From apparel to stickers, totes to journals, The Golden Hour's carefully curated collection will encourage you to radiate joy each and every day. 
 seo: 
-    title: A Whole New World
+    title: The Golden Hour | Shop
     description: 
     keywords:
     social_image: 
@@ -23,12 +23,12 @@ secondary-banner:
 
 <!-- travel guide shop -->
 <section class="p-5p bg-light-grey">
-    <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Travel Guides</h3>
+    <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Apparel</h3>
     <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0 relative">
     
         {% for item in site.products-guides %}
 
-            {% include product-loop-item.html type='Travel Guide' %}
+            {% include product-loop-item.html type='Apparel' %}
 
         {% endfor %}
     </div>
@@ -46,12 +46,12 @@ secondary-banner:
 
 <!-- lightroom shop -->
 <section class="p-5p bg-light-grey">
-    <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Lightroom Presets</h3>
+    <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Stationary & Stickers</h3>
     <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0 relative">
     
         {% for item in site.products-presets %}
 
-            {% include product-loop-item.html type='Lightroom Preset' %}
+            {% include product-loop-item.html type='Stationary & Stickers' %}
 
         {% endfor %}
     </div>
