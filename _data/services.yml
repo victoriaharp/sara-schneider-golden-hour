@@ -1,25 +1,23 @@
 - image: /images/stock-4.jpg
   header: Photography
   description: In photography, the Golden Hour refers to the time shortly before sunset when the light is soft, warm, and diffused. It occurs when the sun is near the horizon, about an hour before sunset. Sara’s natural ability to cultivate connection and establish comfort will easily bring out the best in you, making your photo session easy and enjoyable. Sara brings 20 years of photography and editing experience to her photography business. Sara likes to keep things simple and straightforward and enjoys working alongside the client to create a dream shoot. Sara’s specialty are families and high school senior grad photos.
-
   link: /photography
+  thecycle: right
+
+- image: /images/stock-1.jpg
+  header: Life Coaching
+  description: Sara is a joyful listener who offers one-on-one coaching, to understand, inspire, and encourage women to see themselves in a fresh, authentic light.  Through The Golden Hour, Sara uses her experience as a wife (20 years!), mother (16 years!), friend (40+ years!), as well as 15+ year photography experience, and convictions of her Catholic faith to help you frame or REframe your life in an authentic and personal way. 
+  link: /life-coaching
+  thecycle: left
+
+- image: /images/stock-2.jpg
+  header: Speaking Engagements
+  description: Sara speaks from the heart. With courage and vulnerability, she genuinely shares her own unique experiences of pain, suffering, and redemption. Sara has experienced childhood trauma, infertility, failed adoptions, navigated 2 successful adoptions, suffered friends loss, navigated life with a child with mental illness/special needs, and worked through issues of county and educational failure. In addition, Sara subscribes to a life of joy! Her secret sauce is seeking the positive in any situation. Sara will inspire you with real life experiences that will resonate with you. You’ll laugh, you’ll cry, and you’ll leave knowing you are not alone and more equipped to handle life's adversity.
+  link: /speaking-engagements
   thecycle: right
 
 - image: /images/stock-3.jpg
   header: Graphic Design
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas temporibus aliquam rerum accusantium. Accusamus impedit ullam minima, iste sequi laudantium possimus ea porro minus culpa voluptatum enim necessitatibus dolore rerum.
   link: /graphic-design
-  thecycle: left
-
-- image: /images/stock-1.jpg
-  header: Life Coaching
-  description: Sara is a joyful listener who offers one-on-one coaching, to understand, inspire, and encourage women to see themselves in a fresh, authentic light.  Through The Golden Hour, Sara uses her experience as a wife (20 years!), mother (16 years!), friend (40+ years!), as well as 15+ year photography experience, and convictions of her Catholic faith to help you frame or REframe your life in an authentic and personal way. 
-
-  link: /life-coaching
-  thecycle: right
-
-- image: /images/stock-2.jpg
-  header: Speaking Engagements
-  description: Sara speaks from the heart. With courage and vulnerability, she genuinely shares her own unique experiences of pain, suffering, and redemption. Sara has experienced childhood trauma, infertility, failed adoptions, navigated 2 successful adoptions, suffered friends loss, navigated life with a child with mental illness/special needs, and worked through issues of county and educational failure. In addition, Sara subscribes to a life of joy! Her secret sauce is seeking the positive in any situation. Sara will inspire you with real life experiences that will resonate with you. You’ll laugh, you’ll cry, and you’ll leave knowing you are not alone and more equipped to handle life's adversity.
-  link: /speaking-engagements
   thecycle: left

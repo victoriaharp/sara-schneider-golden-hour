@@ -36,27 +36,25 @@ seo:
 {% include breadcrumbs.html %}
 
 
-<section class="px-10p pt-5p">
-    <h3 class="font-italiana text-4xl">Heading?</h3>
-    <p class="font-montserrat">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia temporibus doloribus a aliquam nam quis quod veniam perspiciatis. Blanditiis vitae veritatis quis tempora placeat iste sapiente consectetur odio magnam eos?</p>
-</section>
-<div class="grid md:grid-cols-2 gap-20 items-center px-10p pb-5p">
+<section class="px-10p py-5p bg-light-grey">
+    <div>
+        <h3 class="font-italiana text-4xl">Heading?</h3>
+        <p class="font-montserrat">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia temporibus doloribus a aliquam nam quis quod veniam perspiciatis. Blanditiis vitae veritatis quis tempora placeat iste sapiente consectetur odio magnam eos?</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-20 items-center">
 
-    <ul class="grid divide-y divide-dark-grey border-y border-dark-grey font-montserrat">
+        <ul class="grid divide-y divide-dark-grey border-y border-dark-grey font-montserrat">
 <!-- This references data pulled from a site level data file, entered in cloudcannon by the client. -->
-        {% for item in page.pricing %}
-        <li class="flex justify-between w-full py-5 ">
-            <p class="mb-0 leading-9 uppercase">{{ item.option }}</p>
-            <p class="mb-0 leading-9">{{ item.price }}</p>
-        </li>
-        {% endfor %}
-
-    </ul>
-
+            {% for item in page.pricing %}
+            <li class="flex justify-between w-full py-5 ">
+                <p class="mb-0 leading-9 uppercase">{{ item.option }}</p>
+                <p class="mb-0 leading-9">{{ item.price }}</p>
+            </li>
+            {% endfor %}
+        </ul>
 
 <!-- This is pulled from the front matter in the home page -->
-    <div class="items-center bg-[url('{{ page.graphic }}')] bg-center bg-cover relative min-h-50">
+        <div class="items-center bg-[url('{{ page.graphic }}')] bg-center bg-cover relative min-h-50">
+        </div>
     </div>
-
-
-</div>
+</section>
