@@ -1,7 +1,7 @@
 ---
 layout: default
 banner:
-    image: 
+    image: /images/suns/sunset-3.jpeg
     supheading: shop the golden hour's
     heading: Curated Collection
     subheading: From apparel to stickers, totes to journals, The Golden Hour's carefully curated collection will encourage you to radiate joy each and every day. 
@@ -12,7 +12,7 @@ seo:
     social_image: 
     hide-from-google: false
 secondary-banner:
-    image: /images/blog-bg-10.jpg
+    image: /images/suns/sunset-3.jpeg
     quote: Once you get a tast for travel, you'll never be the same
 ---
 
@@ -21,12 +21,12 @@ secondary-banner:
 <!-- travel guide shop TO DO replace code if needed -->
 
 
-<!-- travel guide shop -->
+<!-- apparel & totes shop -->
 <section class="p-5p bg-light-grey">
     <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Apparel</h3>
     <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0 relative">
     
-        {% for item in site.products-guides %}
+        {% for item in site.apparel %}
 
             {% include product-loop-item.html type='Apparel' %}
 
