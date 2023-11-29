@@ -5,8 +5,16 @@ banner:
     image-position: 50% 50%
     heading: Families
     subheading:
+trail:
+    - link: /
+      breadcrumb: Home    
+    - link: /services
+      breadcrumb: Services
+    - link: /photography
+      breadcrumb: Photography
+    - link: /families-gallery
+      breadcrumb: Family Photos Gallery
 senior-photos:
-
     - photo_image: /images/family-photos/family-16.jpg
     - photo_image: /images/family-photos/family-17.jpg
     - photo_image: /images/family-photos/family-14.jpg
@@ -26,6 +34,8 @@ seo:
 ---
 <!-- default includes header-nav.html -->
 {% include hero-banner.html %}
+
+{% include breadcrumbs.html %}
 
 <section class="px-10p pt-5p">
   <h3 class="font-italiana text-4xl mb-5p">Family Photos Gallery</h3>

@@ -10,10 +10,10 @@ quote_image:
 quote: 
 quote-author: 
 trail:
-  - link-1:
-    breadcrumb-1: 
-  - link-2: 
-    breadcrumb-2: 
+    - link: /
+      breadcrumb: Home    
+    - link: /services
+      breadcrumb: Services
 seo: 
     title: The Golden Hour by Sara Schneider | Services
     description: 
@@ -25,6 +25,6 @@ seo:
 <!-- default includes header-nav.html -->
 {% include hero-banner.html %}
 
-
+{% include breadcrumbs.html %}
 
 {% include services.html %}

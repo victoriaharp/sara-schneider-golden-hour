@@ -6,6 +6,13 @@ banner:
     image-position: 50% 50%
     heading: Speaking Engagements
     subheading: 
+trail:
+    - link: /
+      breadcrumb: Home    
+    - link: /services
+      breadcrumb: Services
+    - link: /speaking-engagements
+      breadcrumb: Speaking Engagements
 pricing:
   - option: Webinar/Zoom guest
     price: $225
@@ -23,6 +30,9 @@ seo:
 --- 
 <!-- default includes header-nav.html -->
 {% include hero-banner.html %}
+
+{% include breadcrumbs.html %}
+
 <section class="px-10p py-5p">
     <h3 class="font-italiana text-4xl">Heading</h3>
     <p class="font-montserrat">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat expedita fugiat laborum deleniti corrupti dolore numquam suscipit voluptatem consectetur sapiente? Voluptatum distinctio dignissimos delectus eum totam possimus vitae quasi itaque. </p>

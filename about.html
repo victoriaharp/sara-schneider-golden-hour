@@ -7,6 +7,11 @@ banner:
     text-align: right
     heading: Hi, I'm Sara
     subheading:
+trail:
+  - link: /
+    breadcrumb: Home    
+  - link: /about
+    breadcrumb: About
 seo: 
     title: The Golden Hour by Sara Schneider | About
     description: 
@@ -18,6 +23,7 @@ seo:
 
  {% include hero-banner.html %}
 
+ {% include breadcrumbs.html %}
  <!-- about sara detailed section -->
  <section class="grid md:grid-cols-2 items-center px-10p py-5p">
       <img src="/images/suns/kids-1.jpeg" class="text-center md:p-5p max-h-80 w-full object-cover" alt="Silhouettes of 3 kids at sunset">

@@ -4,9 +4,9 @@
     <span class="space-x-5">
         {% for item in page.trail %}
         <span>
-            <a href="{{item.link}}" class="pr-5">{{item.breadcrumb}}</a>
+            <a href="{{item.link}}" class="">{{item.breadcrumb}}</a>
         </span> 
-            » 
+         <span class="last:hidden">  » </span> 
         {% endfor %}
         <!-- <span class="breadcrumb_last" aria-current="page">{{item.current}}</span> -->
 

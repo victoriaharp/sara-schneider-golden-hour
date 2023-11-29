@@ -6,6 +6,13 @@ banner:
     image-position: 50% 50%
     heading: Life Coaching
     subheading: 
+trail:
+    - link: /
+      breadcrumb: Home    
+    - link: /services
+      breadcrumb: Services
+    - link: /life-coaching
+      breadcrumb: Life Coaching
 reasons:
   - image: /images/color-blocks/yellow.png
     reason: Clarity & Goal Setting
@@ -32,6 +39,8 @@ seo:
 
 <!-- default includes header-nav.html -->
  {% include hero-banner.html %}
+
+ {% include breadcrumbs.html %}
 
 
  <!-- Info section -->

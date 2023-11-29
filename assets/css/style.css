@@ -849,6 +849,9 @@ p {
 .bg-\[url\(\'\/images\/suns\/sunset-7\.jpeg\'\)\] {
   background-image: url('/images/suns/sunset-7.jpeg');
 }
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
 .bg-cover {
   background-size: cover;
 }
@@ -1155,6 +1158,10 @@ html {
 /* ----------- Default Styles to apply to the whole project  --------- */
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
+  
+.last\:hidden:last-child {
+  display: none;
+}
   
 .last\:pr-0:last-child {
   padding-right: 0px;

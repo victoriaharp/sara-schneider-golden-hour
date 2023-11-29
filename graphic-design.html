@@ -6,6 +6,13 @@ banner:
     image-position: 50% 43%
     heading: Graphic Design
     subheading:
+trail:
+    - link: /
+      breadcrumb: Home
+    - link: /services
+      breadcrumb: Services
+    - link: /graphic-design
+      breadcrumb: Graphic Design
 pricing:
     - option: Logo Design
       price: $250
@@ -25,6 +32,10 @@ seo:
 ---
 <!-- default includes header-nav.html -->
 {% include hero-banner.html %}
+
+{% include breadcrumbs.html %}
+
+
 <section class="px-10p pt-5p">
     <h3 class="font-italiana text-4xl">Heading?</h3>
     <p class="font-montserrat">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia temporibus doloribus a aliquam nam quis quod veniam perspiciatis. Blanditiis vitae veritatis quis tempora placeat iste sapiente consectetur odio magnam eos?</p>
