@@ -18,7 +18,7 @@ secondary-banner:
 
 {% include hero-banner.html %}
 
-<!-- travel guide shop TO DO replace code if needed -->
+
 
 
 <!-- apparel & totes shop -->
@@ -49,9 +49,9 @@ secondary-banner:
     <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Stationary & Stickers</h3>
     <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0 relative">
     
-        {% for item in site.products-presets %}
+        {% for item in site.stationary %}
 
-            {% include product-loop-item.html type='Stationary & Stickers' %}
+            {% include product-loop-item.html type='Stationary' %}
 
         {% endfor %}
     </div>
