@@ -13,21 +13,19 @@ seo:
     hide-from-google: false
 secondary-banner:
     image: /images/suns/sunset-3.jpeg
-    quote: Once you get a tast for travel, you'll never be the same
+    quote: Once you get a taste for travel, you'll never be the same
 ---
 
 {% include hero-banner.html %}
 
 <!-- apparel & totes shop -->
 <section class="p-5p bg-light-grey">
-    <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Apparel</h3>
+    <h3 class="font-italiana text-center text-3xl py-5p mb-0">Apparel</h3>
+    <!-- div is the container for the for loop -->
     <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0 relative">
-    
-        {% for item in site.product-apparel %}
-
+{% for item in site.product-apparel %}
             {% include product-loop-item.html type='Apparel' %}
-
-        {% endfor %}
+{% endfor %}
     </div>
 
 </section>
@@ -43,10 +41,10 @@ secondary-banner:
 
 <!-- lightroom shop -->
 <section class="p-5p bg-light-grey">
-    <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Stationary & Stickers</h3>
+    <h3 class="font-italiana text-center text-3xl py-5p mb-0">Stationary & Stickers</h3>
     <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0 relative">
     
-        {% for item in site.stationary %}
+        {% for item in site.product-stationary %}
 
             {% include product-loop-item.html type='Stationary' %}
 

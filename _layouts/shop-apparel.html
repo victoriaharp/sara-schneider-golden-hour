@@ -56,14 +56,14 @@ layout: default
         <!-- create counter, set value to 0 -->
         {% assign related-product-count = 0 %}
         <!-- start for loop -->
-        {% for item in site.products-guides %}
+        {% for item in site.product-apparel %}
             {% if item.url == page.url %}
             <!-- do nothing -->
             <!-- otherwise -->
             {% else %}
                 {% if related-product-count < 3 %}
                     <!-- if counter is less than 3 then output -->
-                    {% include product-loop-item.html type='Travel Guide' %}
+                    {% include product-loop-item.html type='Apprel' %}
                     <!-- This adds +1 to the counter -->
                     {% assign related-product-count = related-product-count | plus:1 %}
                 {% endif %}
