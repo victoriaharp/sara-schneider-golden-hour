@@ -18,15 +18,12 @@ secondary-banner:
 
 {% include hero-banner.html %}
 
-
-
-
 <!-- apparel & totes shop -->
 <section class="p-5p bg-light-grey">
     <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Apparel</h3>
     <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0 relative">
     
-        {% for item in site.apparel %}
+        {% for item in site.product-apparel %}
 
             {% include product-loop-item.html type='Apparel' %}
 
