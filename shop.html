@@ -5,6 +5,11 @@ banner:
     supheading: shop the golden hour's
     heading: Curated Collection
     subheading: From apparel to stickers, totes to journals, The Golden Hour's carefully curated collection will encourage you to radiate joy each and every day. 
+trail:
+  - link: /
+    breadcrumb: Home    
+  - link: /shop
+    breadcrumb: Shop
 seo: 
     title: The Golden Hour | Shop
     description: 
@@ -18,9 +23,11 @@ secondary-banner:
 
 {% include hero-banner.html %}
 
+{% include breadcrumbs.html %}
+
 <!-- apparel & totes shop -->
-<section class="p-5p bg-light-grey">
-    <h3 class="font-italiana text-center text-3xl py-5p mb-0">Apparel</h3>
+<section class="px-10p py-5p bg-light-grey">
+    <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Apparel</h3>
     <!-- div is the container for the for loop -->
     <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0 relative">
         {% for item in site.products-apparel %}
@@ -33,14 +40,14 @@ secondary-banner:
 <!-- big quote banner -->
 <section class="flex items-center min-h-[50vh] bg-center bg-cover relative text-white" style="background-image:url('{{ page.secondary-banner.image }}')">
 
-        <h3 class="font-italiana text-[4vw] pr-50p tracking-widest mb-0 p-5p">"{{page.secondary-banner.quote}}"</h3>
+        <h3 class="font-italiana text-[4vw] pr-50p tracking-widest mb-0 p-10p">"{{page.secondary-banner.quote}}"</h3>
 
 
 </section>
 
 
-<!-- lightroom shop -->
-<section class="p-5p bg-light-grey">
+<!-- stationary shop -->
+<section class="px-10p pb-5p bg-light-grey">
     <h3 class="font-italiana text-center text-3xl py-5p mb-0">Stationary & Stickers</h3>
     <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0 relative">
     
