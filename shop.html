@@ -23,9 +23,9 @@ secondary-banner:
     <h3 class="font-italiana text-center text-3xl py-5p mb-0">Apparel</h3>
     <!-- div is the container for the for loop -->
     <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0 relative">
-{% for item in site.product-apparel %}
+        {% for item in site.products-apparel %}
             {% include product-loop-item.html type='Apparel' %}
-{% endfor %}
+        {% endfor %}
     </div>
 
 </section>
@@ -44,7 +44,7 @@ secondary-banner:
     <h3 class="font-italiana text-center text-3xl py-5p mb-0">Stationary & Stickers</h3>
     <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0 relative">
     
-        {% for item in site.product-stationary %}
+        {% for item in site.products-stationary %}
 
             {% include product-loop-item.html type='Stationary' %}
 
