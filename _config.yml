@@ -1,9 +1,9 @@
 collections:
   post:
     output: true
-  products-stationary:
+  products-all:
     output: true
-  products-apparel:
+  products-top-sellers:
     output: true
   archives:
     output: true

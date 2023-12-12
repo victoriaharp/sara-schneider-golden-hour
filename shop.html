@@ -25,13 +25,13 @@ secondary-banner:
 
 {% include breadcrumbs.html %}
 
-<!-- apparel & totes shop -->
+<!-- top sellers shop -->
 <section class="px-10p py-5p bg-light-grey">
-    <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Apparel</h3>
+    <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Top Sellers</h3>
     <!-- div is the container for the for loop -->
-    <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0 relative">
-        {% for item in site.products-apparel %}
-            {% include product-loop-item.html type='Apparel' %}
+    <div class="flex flex-wrap gap-5 mx-auto  relative">
+        {% for item in site.products-top-sellers %}
+            {% include product-loop-item.html type='Top Seller' %}
         {% endfor %}
     </div>
 
@@ -46,14 +46,14 @@ secondary-banner:
 </section>
 
 
-<!-- stationary shop -->
+<!-- All shop -->
 <section class="px-10p pb-5p bg-light-grey">
-    <h3 class="font-italiana text-center text-3xl py-5p mb-0">Stationary & Stickers</h3>
-    <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0 relative">
+    <h3 class="font-italiana text-center text-3xl py-5p mb-0">All Products</h3>
+    <div class="flex flex-wrap gap-5 mx-auto relative">
     
-        {% for item in site.products-stationary %}
+        {% for item in site.products-all %}
 
-            {% include product-loop-item.html type='Stationary' %}
+            {% include product-loop-item.html %}
 
         {% endfor %}
     </div>

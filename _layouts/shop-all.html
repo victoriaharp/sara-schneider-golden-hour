@@ -65,7 +65,7 @@ layout: default
             {% else %}
                 {% if related-product-count < 3 %}
                     <!-- if counter is less than 3 then output -->
-                    {% include product-loop-item.html type='Apparel' %}
+                    {% include product-loop-item.html %}
                     <!-- This adds +1 to the counter -->
                     {% assign related-product-count = related-product-count | plus:1 %}
                 {% endif %}
