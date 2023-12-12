@@ -18,7 +18,9 @@
     <div class="font-montserrat grow uppercase text-right space-x-5 hidden lg:block">
 
         {% for item in site.data.nav %}
-        <a href="{{item.link}}" class="text-left inline-block px-5 last:pr-0">{{item.name}}</a>
+        <span class="space-x-10 text-left inline-block px-5 last:pr-0 ">
+            <a href="{{item.link}}" class="link-underline">{{item.name}}</a>
+        </span>
         {% endfor %}
 
     </div>

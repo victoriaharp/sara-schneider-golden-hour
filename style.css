@@ -110,6 +110,9 @@ html {
     .button  {
         @apply inline-block px-4 py-2 uppercase tracking-wide bg-zinc-800 text-white ;
     }
+    .link-underline{
+      @apply border-b border-transparent hover:border-b hover:border-dark-grey transition-all
+    }
 
     .line-clamp-4{
         overflow: hidden;
