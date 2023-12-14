@@ -13,7 +13,9 @@ html {
   scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
 }
 
-
+.slfy-store.embedded.p-nunito.h-nunito.b-16.main{
+  @apply font-montserrat;
+}
 /* ----------- Default Styles to apply to the whole project  --------- */
 
 @layer base {
