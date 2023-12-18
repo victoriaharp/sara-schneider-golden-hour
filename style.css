@@ -16,6 +16,10 @@ html {
 .slfy-store.embedded.p-nunito.h-nunito.b-16.main{
   @apply font-montserrat;
 }
+
+.meta-content .product-card .product-item .column{
+  @apply font-montserrat;
+}
 /* ----------- Default Styles to apply to the whole project  --------- */
 
 @layer base {

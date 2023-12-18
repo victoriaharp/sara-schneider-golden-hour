@@ -1164,6 +1164,10 @@ html {
 .slfy-store.embedded.p-nunito.h-nunito.b-16.main {
   font-family: Montserrat, sans-serif;
 }
+
+.meta-content .product-card .product-item .column {
+  font-family: Montserrat, sans-serif;
+}
 /* ----------- Default Styles to apply to the whole project  --------- */
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
