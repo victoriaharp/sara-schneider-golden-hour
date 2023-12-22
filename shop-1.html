@@ -1,0 +1,61 @@
+---
+layout: default
+banner:
+    image: /images/suns/sunset-3.jpeg
+    supheading: shop the golden hour's
+    heading: Curated Collection
+    subheading: From apparel to stickers, totes to journals, The Golden Hour's carefully curated collection will encourage you to radiate joy each and every day. 
+trail:
+  - link: /
+    breadcrumb: Home    
+  - link: /shop
+    breadcrumb: Shop
+seo: 
+    title: The Golden Hour | Shop
+    description: 
+    keywords:
+    social_image: 
+    hide-from-google: false
+secondary-banner:
+    image: /images/suns/sunset-3.jpeg
+    quote: Once you get a taste for travel, you'll never be the same
+---
+
+{% include hero-banner.html %}
+
+{% include breadcrumbs.html %}
+
+<!-- top sellers shop -->
+<section class="px-10p py-5p bg-light-grey">
+    <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Top Sellers</h3>
+    <!-- div is the container for the for loop -->
+    <div class="flex flex-wrap gap-5 mx-auto  relative">
+        {% for item in site.products-top-sellers %}
+            {% include product-loop-item.html type='Top Seller' %}
+        {% endfor %}
+    </div>
+
+</section>
+
+<!-- big quote banner -->
+<section class="flex items-center min-h-[50vh] bg-center bg-cover relative text-white" style="background-image:url('{{ page.secondary-banner.image }}')">
+
+        <h3 class="font-italiana text-[4vw] pr-50p tracking-widest mb-0 p-10p">"{{page.secondary-banner.quote}}"</h3>
+
+
+</section>
+
+
+<!-- All shop -->
+<section class="px-10p pb-5p bg-light-grey">
+    <h3 class="font-italiana text-center text-3xl py-5p mb-0">All Products</h3>
+    <div class="flex flex-wrap gap-5 mx-auto relative">
+    
+        {% for item in site.products-all %}
+
+            {% include product-loop-item.html %}
+
+        {% endfor %}
+    </div>
+
+</section>

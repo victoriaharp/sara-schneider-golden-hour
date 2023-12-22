@@ -26,36 +26,54 @@ secondary-banner:
 {% include breadcrumbs.html %}
 
 <!-- top sellers shop -->
-<section class="px-10p py-5p bg-light-grey">
-    <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Top Sellers</h3>
-    <!-- div is the container for the for loop -->
-    <div class="flex flex-wrap gap-5 mx-auto  relative">
-        {% for item in site.products-top-sellers %}
-            {% include product-loop-item.html type='Top Seller' %}
-        {% endfor %}
-    </div>
+<section class="px-10p pb-5p bg-light-grey ">
+    <!-- <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Top Sellers</h3>
 
+
+    <div class="flex flex-wrap justify-center gap-5 mx-auto  relative">
+        {% for item in site.products-top-sellers %}
+        <div class="bg-white shrink-0 basis-30p">
+            <div class="relative pb-5 break-inside-avoid">
+                <div class="bg-cover relative min-h-50">
+                    <img src="{{item.product-image}}" class="absolute inset-0 w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="p-5">
+                {% if include.type %}
+                <p class="font-montserrat bg-light-grey uppercase inline-block p-1 text-sm">{{include.type}}</p>
+                {% endif %}
+                <h4 class="font-montserrat text-lg uppercase">{{item.title}}</h4>
+                <p class="font-montserrat text-sm">{{item.description}}</p>
+
+                <a href="{{item.url}}" data-text="Buy Now" id="{{item.id}}" class="sellfy-buy-button"></a>
+                <script src="https://sellfy.com/js/api_buttons.js"></script>
+                
+                {% assign cent-check = item.price | modulo: 100 %}
+                <p class="font-montserrat text-sm">
+                    {% if cent-check > 1 %}
+                    ${{item.price | divided_by: 100.00}}
+                    {% else %}
+                    ${{item.price | divided_by: 100}}
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+    </div> -->
+
+
+    <h3 class="font-italiana text-center text-3xl py-5p mb-0">All Items</h3>
+    <section class="space-x-3">
+        <iframe src="https://ssgoldenhour.sellfy.store/embed/store/" width="100%" height="365" allowtransparency="true" class="font-montserrat" style="border: none;"></iframe>
+        <script src="https://sellfy.com/js/api_buttons.js"></script>
+    </section>
 </section>
 
 <!-- big quote banner -->
-<section class="flex items-center min-h-[50vh] bg-center bg-cover relative text-white" style="background-image:url('{{ page.secondary-banner.image }}')">
+<!-- <section class="flex items-center min-h-[50vh] bg-center bg-cover relative text-white" style="background-image:url('{{ page.secondary-banner.image }}')">
 
         <h3 class="font-italiana text-[4vw] pr-50p tracking-widest mb-0 p-10p">"{{page.secondary-banner.quote}}"</h3>
 
 
-</section>
+</section> -->
 
-
-<!-- All shop -->
-<section class="px-10p pb-5p bg-light-grey">
-    <h3 class="font-italiana text-center text-3xl py-5p mb-0">All Products</h3>
-    <div class="flex flex-wrap gap-5 mx-auto relative">
-    
-        {% for item in site.products-all %}
-
-            {% include product-loop-item.html %}
-
-        {% endfor %}
-    </div>
-
-</section>
