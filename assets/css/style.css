@@ -591,6 +591,10 @@ p {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -606,6 +610,9 @@ p {
 }
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 .mb-20 {
   margin-bottom: 5rem;
@@ -670,11 +677,11 @@ p {
 .max-h-80 {
   max-height: 80vh;
 }
-.max-h-\[75vh\] {
-  max-height: 75vh;
-}
 .max-h-\[90vh\] {
   max-height: 90vh;
+}
+.max-h-\[75vh\] {
+  max-height: 75vh;
 }
 .min-h-\[90vh\] {
   min-height: 90vh;
@@ -684,9 +691,6 @@ p {
 }
 .min-h-50 {
   min-height: 50vh;
-}
-.min-h-screen {
-  min-height: 100vh;
 }
 .min-h-80 {
   min-height: 80vh;
@@ -738,9 +742,6 @@ p {
   -moz-column-break-inside: avoid;
        break-inside: avoid;
 }
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
@@ -749,6 +750,9 @@ p {
 }
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -866,9 +870,6 @@ p {
 .bg-cover {
   background-size: cover;
 }
-.bg-fixed {
-  background-attachment: fixed;
-}
 .bg-center {
   background-position: center;
 }
@@ -879,13 +880,13 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.object-center {
-  -o-object-position: center;
-     object-position: center;
-}
 .object-top {
   -o-object-position: top;
      object-position: top;
+}
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 .object-bottom {
   -o-object-position: bottom;
@@ -974,14 +975,14 @@ p {
 .pr-5p {
   padding-right: 5%;
 }
+.pt-5p {
+  padding-top: 5%;
+}
 .pl-5p {
   padding-left: 5%;
 }
 .pt-2 {
   padding-top: 0.5rem;
-}
-.pt-5p {
-  padding-top: 5%;
 }
 .pr-50p {
   padding-right: 50%;
@@ -1020,6 +1021,9 @@ p {
   font-size: 1.875rem;
   line-height: 1;
 }
+.text-\[20px\] {
+  font-size: 20px;
+}
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
@@ -1031,13 +1035,6 @@ p {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 1.2;
-}
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1.2;
-}
-.text-\[6\.4vw\] {
-  font-size: 6.4vw;
 }
 .text-xl {
   font-size: 1.25rem;
@@ -1055,8 +1052,8 @@ p {
 .leading-9 {
   line-height: 2.25rem;
 }
-.leading-\[5rem\] {
-  line-height: 5rem;
+.leading-\[2rem\] {
+  line-height: 2rem;
 }
 .leading-6 {
   line-height: 1.5rem;
@@ -1139,7 +1136,7 @@ p {
   }
 .burger-menu {
   --tw-bg-opacity: 1;
-  background-color: rgb(242 239 236 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
       display: flex;
       position: fixed;
       top: 0vh;
@@ -1168,6 +1165,10 @@ p {
     text-align:center;
     white-space:nowrap;
 }
+.burger-menu span a{
+    font-size: 12px;
+    
+}
 
 /* Custom CSS */
 
@@ -1182,6 +1183,36 @@ html {
 .meta-content .product-card .product-item .column {
   font-family: Montserrat, sans-serif;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+ }
+ .dropdown-title {
+  /* padding: 0.25rem 0.5rem; */
+  display: inline-block;
+ }
+ .dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: -1rem;
+  padding: 0.5rem;
+  display: none;
+  background-color: white;
+  z-index: 2;
+  text-align: left;
+  min-width: 15rem;
+ }
+ .dropdown:hover .dropdown-content {
+  display: block;
+ }
+ .dropdown-content a {
+  display: block;
+ }
+
+ /* #text-sm a{
+  size: 12px
+ } */
 /* ----------- Default Styles to apply to the whole project  --------- */
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
@@ -1284,9 +1315,6 @@ html {
   .md\:justify-between {
     justify-content: space-between;
   }
-  .md\:bg-fixed {
-    background-attachment: fixed;
-  }
   .md\:p-5p {
     padding: 5%;
   }
@@ -1351,10 +1379,26 @@ html {
   .lg\:block {
     display: block;
   }
+  .lg\:grid {
+    display: grid;
+  }
   .lg\:hidden {
     display: none;
   }
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .lg\:bg-fixed {
     background-attachment: fixed;
+  }
+  .lg\:text-\[6\.4vw\] {
+    font-size: 6.4vw;
+  }
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 1;
+  }
+  .lg\:leading-\[5rem\] {
+    line-height: 5rem;
   }
 }

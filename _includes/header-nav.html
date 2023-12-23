@@ -9,20 +9,33 @@
     </div>
 </nav> -->
 
-<nav class="flex items-center justify-between text-orange px-5p  z-10">
+<nav class="flex items-center justify-between px-5p z-10">
 
     <div class="hidden lg:block">
         <a href="/index" class="font-italiana mb-0 tracking-widest text-3xl border-b border-transparent text-dark-grey"><img src="/images/icons/TGH-logo5v2.png" class="h-[75px]"></a>
     </div>
 
-    <div class="font-montserrat grow uppercase text-right space-x-5 hidden lg:block">
+    <div class="font-montserrat grow text-right space-x-5 hidden lg:block">
 
         {% for item in site.data.nav %}
-        <span class="space-x-10 text-left inline-block px-5 last:pr-0 ">
+        <span class="uppercase space-x-10 text-left inline-block px-5 last:pr-0 ">
             <a href="{{item.link}}" class="link-underline">{{item.name}}</a>
         </span>
         {% endfor %}
 
+        <span class="space-x-10 text-left inline-block px-5 last:pr-0 ">
+            <div class="dropdown hidden lg:block">
+                <span class="dropdown-title uppercase">Quick Booking Links</span>
+                    <div class="dropdown-content">
+                        <a href="https://calendly.com/ssgoldenhour/senior-photography-session-60mins" target="_blank" class="my-5 text-center">60-minute Senior Shoot</a>
+                        <a href="https://calendly.com/ssgoldenhour/senior-photo-session-90mins" target="_blank" class="mb-5 text-center"> 90-minute Senior Shoot </a>
+                        <a href="#" target="_blank" class="mb-5 text-center">Family Shoot</a>
+                        <a href="https://calendly.com/ssgoldenhour/coaching-discovery-call" target="_blank" class="mb-5 text-center">FREE 15-Minute Coaching Call</a>
+                        <a href="https://calendly.com/ssgoldenhour/coaching-session" target="_blank" class=" text-center">50-minute Coaching Session</a>
+                    </div>
+            </div>
+
+        </span>
     </div>
 </nav>
 
@@ -35,7 +48,18 @@
     </div>
     <div class="burger-menu">
     {% for item in site.data.nav %}
-        <a href="{{item.link}}" class="text-left inline-block px-5 last:pr-0 font-montserrat">{{item.name}}</a>
+        <a href="{{item.link}}" class="text-left inline-block px-5 last:pr-0 font-montserrat ">{{item.name}}</a>
     {% endfor %}
+
+        <span class="text-center">
+            <p class="font-montserrat text-[20px] text-center">Quick Links</p>
+            <span class="">
+                <a href="https://calendly.com/ssgoldenhour/senior-photography-session-60mins" target="_blank" class="my-2 font-montserrat text-center" >60-minute Senior Shoot</a>
+                <a href="https://calendly.com/ssgoldenhour/senior-photo-session-90mins" target="_blank" class="mb-2  font-montserrat text-center" > 90-minute Senior Shoot </a>
+                <a href="#" target="_blank" class="mb-2  font-montserrat text-center" >Family Shoot</a>
+                <a href="https://calendly.com/ssgoldenhour/coaching-discovery-call" target="_blank" class="mb-2  font-montserrat text-center" >FREE 15-Minute Coaching Call</a>
+                <a href="https://calendly.com/ssgoldenhour/coaching-session" target="_blank" class="  font-montserrat text-center" >50-minute Coaching Session</a>
+            </span>
+        </span>
     </div>
 </nav>

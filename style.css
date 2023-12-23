@@ -20,6 +20,36 @@ html {
 .meta-content .product-card .product-item .column{
   @apply font-montserrat;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+ }
+ .dropdown-title {
+  /* padding: 0.25rem 0.5rem; */
+  display: inline-block;
+ }
+ .dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: -1rem;
+  padding: 0.5rem;
+  display: none;
+  background-color: white;
+  z-index: 2;
+  text-align: left;
+  min-width: 15rem;
+ }
+ .dropdown:hover .dropdown-content {
+  display: block;
+ }
+ .dropdown-content a {
+  display: block;
+ }
+
+ /* #text-sm a{
+  size: 12px
+ } */
 /* ----------- Default Styles to apply to the whole project  --------- */
 
 @layer base {
@@ -190,7 +220,7 @@ html {
   }
   
   .burger-menu {
-      @apply bg-light-grey;
+      @apply bg-white;
       display: flex;
       position: fixed;
       top: 0vh;
@@ -218,4 +248,8 @@ html {
     text-align:center;
     white-space:nowrap;
   }
+.burger-menu span a{
+    font-size: 12px;
+    
+}
 }
