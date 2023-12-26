@@ -819,6 +819,9 @@ p {
   --tw-divide-opacity: 1;
   border-color: rgb(30 30 30 / var(--tw-divide-opacity));
 }
+.overflow-auto {
+  overflow: auto;
+}
 .overflow-x-scroll {
   overflow-x: scroll;
 }
@@ -1349,6 +1352,9 @@ html {
   .md\:pr-\[19\%\] {
     padding-right: 19%;
   }
+  .md\:pr-0 {
+    padding-right: 0px;
+  }
   .md\:text-left {
     text-align: left;
   }
@@ -1391,12 +1397,18 @@ html {
   .lg\:bg-fixed {
     background-attachment: fixed;
   }
+  .lg\:pl-0 {
+    padding-left: 0px;
+  }
   .lg\:text-\[6\.4vw\] {
     font-size: 6.4vw;
   }
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 1;
+  }
+  .lg\:text-\[4vw\] {
+    font-size: 4vw;
   }
   .lg\:leading-\[5rem\] {
     line-height: 5rem;

@@ -16,8 +16,8 @@
   link: /speaking-engagements
   thecycle: right
 
-- image: /images/icons/graphic-mockup.jpg
-  header: Graphic Design
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas temporibus aliquam rerum accusantium. Accusamus impedit ullam minima, iste sequi laudantium possimus ea porro minus culpa voluptatum enim necessitatibus dolore rerum.
-  link: /graphic-design
-  thecycle: left
+# - image: /images/icons/graphic-mockup.jpg
+#   header: Graphic Design
+#   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas temporibus aliquam rerum accusantium. Accusamus impedit ullam minima, iste sequi laudantium possimus ea porro minus culpa voluptatum enim necessitatibus dolore rerum.
+#   link: /graphic-design
+#   thecycle: left
