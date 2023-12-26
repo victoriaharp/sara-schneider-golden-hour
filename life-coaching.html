@@ -44,8 +44,8 @@ seo:
 
 
  <!-- Info section -->
- <section class="grid grid-cols-2 gap-10 px-10p py-5p items-center bg-light-grey">
-  <img src="/images/headshots/8439.jpg" class="object-cover object-center w-full h-[80vh]">
+ <section class="grid grid-cols-1 lg:grid-cols-2 gap-10 px-5p lg:px-10p  py-5p items-center bg-light-grey">
+  <img src="/images/headshots/8439.jpg" class="object-cover object-center w-full h-[80vh] order-last lg:order-first">
     <div class="">
         <h3 class="font-italiana text-4xl">A Life Coach...</h3>
         <p class="font-montserrat text-base">is a professional who helps individuals identify and achieve their personal and professional goals. Life coaching is a thought provoking, creative, and collaborative process where a certified coach works with a client to assess their current situation, explore their desires and aspirations, and develop strategies and action plans to achieve their goals. 
@@ -54,21 +54,26 @@ seo:
     
  </section>
 
- <section class="grid grid-cols-2 gap-10 px-10p py-5p items-center bg-light-grey">
+ <section class="grid grid-cols-1 lg:grid-cols-2 gap-10 px-5p lg:px-10p  py-5p items-center bg-light-grey">
 
     
 
     <div>
         <h3 class="font-italiana text-4xl">Sara coaches clients...</h3>
-        <p class="font-montserrat text-base mb-5p">seeking a greater sense of joy in various areas of life, including career, relationships, health, personal growth, and overall well-being. She helps clients develop self-awareness, enhance their strengths, improve their mindset, and take practical steps towards achieving their goals, with joy! 
+        <p class="font-montserrat text-base mb-5">seeking a greater sense of joy in various areas of life, including career, relationships, health, personal growth, and overall well-being. She helps clients develop self-awareness, enhance their strengths, improve their mindset, and take practical steps towards achieving their goals, with joy! 
         <br>Life coaches do not provide therapy or counseling, but rather focus on helping clients set and achieve goals in the present and future. Sara believes that individuals have the potential to create positive change in their lives, and that she, as a skilled coach, can facilitate that process by providing guidance, support, and motivation. Sara’s coaching sessions can be conducted through one-on-one sessions via phone or Zoom sessions. The duration of coaching engagement can vary depending on the goals and needs of the client.
-          </p>
-          <a href="https://calendly.com/ssgoldenhour/coaching-discovery-call" class="font-italiana border  px-5 py-3 border-dark-grey uppercase hover:bg-dark-grey hover:border-light-grey hover:text-light-grey transition-all">Book your FREE 15-Minute Discovery Call</a>
-          <a href="https://calendly.com/ssgoldenhour/coaching-session" class="font-italiana border  px-5 py-3 border-dark-grey uppercase hover:bg-dark-grey hover:border-light-grey hover:text-light-grey transition-all">Book your 50-minute Session</a>
-
-          
+          </p>   
+        <div class="block lg:inline my-10 lg:my-0 ">
+          <a href="https://calendly.com/ssgoldenhour/coaching-discovery-call" class="font-italiana border  px-5 py-3 border-dark-grey uppercase hover:bg-dark-grey hover:border-light-grey hover:text-light-grey transition-all ">Book FREE 15-Minute Discovery Call</a>
+          </div>
+    
+          <div class="block lg:inline my-10 lg:my-0 ">
+          <a href="https://calendly.com/ssgoldenhour/coaching-session" class="font-italiana border  px-5 py-3 border-dark-grey uppercase hover:bg-dark-grey hover:border-light-grey hover:text-light-grey transition-all ">Book your 50-minute Session</a>
+          </div>
     </div>
-    <img src="/images/headshots/Sara.jpg" class="object-cover object-center w-full h-[80vh]">
+
+      
+    <img src="/images/headshots/Sara.jpg" class="object-cover object-center w-full h-[80vh] hidden lg:block">
 
  </section>
 
@@ -77,16 +82,16 @@ seo:
 
  <!-- horizontal scroll gallery -->
 <section class="">
-    <div class="md:flex py-5p px-10p">
-        <div class="md:flex text-left">
-            <h2 class="uppercase font-italiana text-4xl md:rotate-text-180">5 Reasons to Hire a Coach</h2> 
+    <div class="lg:flex py-5p px-5p lg:px-10p ">
+        <div class="lg:flex text-left">
+            <h2 class="uppercase font-italiana text-4xl lg:rotate-text-180">5 Reasons to Hire a Coach</h2> 
         </div>
     </div> 
 
 
     <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll px-0 border-b border-dark-grey pb-5">
         {% for item in page.reasons %}
-        <div class="basis-[30%] 3xl:basis-[20%] shrink-0 relative">
+        <div class="basis-[70%] 3xl:basis-[20%] shrink-0 relative">
             <img src="{{item.image}}" class="grow object-cover object-center inset-0 w-full h-[20vh]">
             <h4 class="text-center font-italiana text-2xl border-b border-black pb-5">{{item.reason}}</h4>
             <p class="font-montserrat">{{item.description}}</p>

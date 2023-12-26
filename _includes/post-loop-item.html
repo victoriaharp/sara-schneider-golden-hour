@@ -1,4 +1,4 @@
-<div class="{% if post.aspect-ratio == 'aspect-square' %} basis-60p md:basis-30p {% else %} basis-90p md:basis-45p {% endif %} shrink-0 relative pb-5 break-inside-avoid">
+<div class="{% if post.aspect-ratio == 'aspect-square' %} basis-60p lg:basis-30p {% else %} basis-90p lg:basis-45p {% endif %} shrink-0 relative pb-5 break-inside-avoid">
     <div class="bg-cover relative {{ post.aspect-ratio }}">
         <img src="{{ post.featured_image }}" alt="{{post.title}}"class="absolute inset-0 w-full h-full object-cover ">
     </div>
