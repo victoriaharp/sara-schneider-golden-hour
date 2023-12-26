@@ -1064,6 +1064,15 @@ p {
 .text-\[7vw\] {
   font-size: 7vw;
 }
+.text-\[5rem\] {
+  font-size: 5rem;
+}
+.text-\[10vw\] {
+  font-size: 10vw;
+}
+.text-\[15vw\] {
+  font-size: 15vw;
+}
 .font-light {
   font-weight: 300;
 }
@@ -1095,6 +1104,9 @@ p {
 }
 .text-\[7xl\] {
   color: 7xl;
+}
+.text-\[\] {
+  color: ;
 }
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
@@ -1538,6 +1550,9 @@ html {
   .lg\:text-8xl {
     font-size: 6rem;
     line-height: 1;
+  }
+  .lg\:text-\[7vw\] {
+    font-size: 7vw;
   }
   .lg\:leading-\[5rem\] {
     line-height: 5rem;
