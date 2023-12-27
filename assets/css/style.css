@@ -1076,6 +1076,9 @@ p {
 .font-light {
   font-weight: 300;
 }
+.font-bold {
+  font-weight: 700;
+}
 .uppercase {
   text-transform: uppercase;
 }
