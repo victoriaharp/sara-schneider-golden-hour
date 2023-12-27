@@ -888,6 +888,9 @@ p {
 .bg-\[url\(\'\/images\/suns\/sunset-7\.jpeg\'\)\] {
   background-image: url('/images/suns/sunset-7.jpeg');
 }
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
 .bg-cover {
   background-size: cover;
 }

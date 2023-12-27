@@ -1,0 +1,44 @@
+---
+layout: default
+pricing:
+  - option: Webinar/Zoom guest
+    price: $225
+  - option: In person, less than one hour
+    price: $425
+  - option: In person, less than two hours
+    price: $625
+image: /images/suns/sunset-7.jpeg
+seo: 
+    title: 
+    description: 
+    keywords: 
+    social_image: 
+    hide-from-google: true
+---
+
+<!-- speaking engagements pricing structure -->
+<div class="grid lg:grid-cols-2 gap-20 items-center px-5p lg:px-10p  pb-5p bg-light-grey">
+
+    <ul class="grid divide-y divide-dark-grey border-y border-dark-grey font-montserrat">
+
+<!-- This references data pulled from a site level data file, entered in cloudcannon by the client. -->
+        {% for item in page.pricing %}
+        <li class="flex justify-between w-full py-5 ">
+            <p class="mb-0 leading-9 uppercase">{{ item.option }}</p>
+            <p class="mb-0 leading-9">{{ item.price }}</p>
+        </li>
+        {% endfor %}
+
+        <li class="py-5">
+            For special events, retreats, half-day seminars or to book something specific, specific outreach is requested. Please send a detailed email to Sara at hello@sara-schneider.com.
+
+        </li>
+    </ul>
+
+
+<!-- This is pulled from the front matter in the home page -->
+    <div class="items-center bg-[url('{{ page.image }}')] bg-center bg-cover relative min-h-50">
+    </div>
+
+
+</div>

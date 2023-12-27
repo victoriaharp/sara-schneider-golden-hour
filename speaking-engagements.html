@@ -13,14 +13,6 @@ trail:
       breadcrumb: Services
     - link: /speaking-engagements
       breadcrumb: Speaking Engagements
-pricing:
-  - option: Webinar/Zoom guest
-    price: $225
-  - option: In person, less than one hour
-    price: $425
-  - option: In person, less than two hours
-    price: $625
-image: /images/suns/sunset-7.jpeg
 seo: 
     title: The Golden Hour by Sara Schneider | Coaching
     description: 
@@ -40,29 +32,19 @@ seo:
     Sara speaks from the heart. With courage and vulnerability, she genuinely shares her own unique experiences of pain, suffering, and redemption. Sara has experienced childhood trauma, infertility, failed adoptions, navigated 2 successful adoptions, suffered friends loss, navigated life with a child with mental illness/special needs, and worked through issues of county and educational failure.
     <br><br>
     In addition, Sara subscribes to a life of joy! Her secret sauce is seeking the positive in any situation. Sara will inspire you with real life experiences that will resonate with you. You’ll laugh, you’ll cry, and you’ll leave knowing you are not alone and more equipped to handle life's adversity.
+    <br><br>
+    For pricing, please inquire using the form in the <a href="/contact" class="border-b border-black">contact</a> page or by emailing <a href=mailto:“hello@sara-schneider.com” class="border-b border-black">hello@sara-schneider.com</a>.
     </p>
 </section>
-<div class="grid lg:grid-cols-2 gap-20 items-center px-5p lg:px-10p  pb-5p bg-light-grey">
 
-    <ul class="grid divide-y divide-dark-grey border-y border-dark-grey font-montserrat">
-<!-- This references data pulled from a site level data file, entered in cloudcannon by the client. -->
-        {% for item in page.pricing %}
-        <li class="flex justify-between w-full py-5 ">
-            <p class="mb-0 leading-9 uppercase">{{ item.option }}</p>
-            <p class="mb-0 leading-9">{{ item.price }}</p>
-        </li>
-        {% endfor %}
-
-        <li class="py-5">
-            For special events, retreats, half-day seminars or to book something specific, specific outreach is requested. Please send a detailed email to Sara at hello@sara-schneider.com.
-
-        </li>
-    </ul>
+<section class="px-5p lg:px-10p  pb-5p bg-light-grey grid grid-cols-2 gap-20 items-center">
+  <a href="https://www.cbsnews.com/minnesota/news/new-treatment-center-in-east-bethel-aims-to-address-teenage-mental-health/?intcid=CNM-00-10abd1h">
+    <img src="/images/news-shot-1.png">
+  </a>
+  <div class="">
+    <h3 class="font-italiana text-4xl">Heading?</h3>
+    <p class="font-montserrat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio placeat quod nisi dolores deserunt maiores sapiente ratione obcaecati, sint quibusdam nam laboriosam ipsa libero quia deleniti est, cumque rem!</p>
+  </div>
+</section>
 
 
-<!-- This is pulled from the front matter in the home page -->
-    <div class="items-center bg-[url('{{ page.image }}')] bg-center bg-cover relative min-h-50">
-    </div>
-
-
-</div>
