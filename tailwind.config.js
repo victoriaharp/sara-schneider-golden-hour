@@ -76,6 +76,11 @@ module.exports = {
         'light-grey': '#F2EFEC',
         'medium-grey': '#E0DCD9',
         'dark-grey': '#1E1E1E',
+        'gh-yellow': '#f1be5a',
+        'gh-light-blue': '#538a9d',
+        'gh-burnt': '#c47747',
+        'gh-dark-blue': '#49697a',
+        'gh-orange': '#cd6102'
       },
       
     },
