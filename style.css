@@ -93,7 +93,7 @@ html {
         @apply uppercase font-montserrat pb-5;
     }
     .sidebar-content p {
-        @apply text-left pb-5 font-montserrat;
+        @apply text-left font-montserrat;
     }
     .sidebar-content blockquote p{
         @apply text-5xl font-italiana text-left ;
