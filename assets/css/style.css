@@ -320,16 +320,15 @@ h1 {
   line-height: .85;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.875rem;
   line-height: .85;
 }
 h3 {
-  font-size: 1.25rem;
-  font-size: 1.125rem;;
+  font-size: 1.5rem;
   line-height: .85;
 }
 h4 {
-  font-size: 1.125rem;;
+  font-size: 1.25rem;
   line-height: .85;
 }
 p {
@@ -338,13 +337,15 @@ p {
 }
 .content h2, 
     .content h3 {
-  padding-bottom: 1.25rem;
-  font-family: Montserrat, sans-serif;
-  text-transform: uppercase;
+  padding-bottom: 5%;
+  font-family: Italiana, sans-serif;
 }
 .content p {
   padding-bottom: 1.25rem;
   text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
 }
 .content blockquote {
   margin-left: auto;
@@ -358,8 +359,7 @@ p {
 .sidebar-content h2, 
     .sidebar-content h3 {
   padding-bottom: 1.25rem;
-  font-family: Montserrat, sans-serif;
-  text-transform: uppercase;
+  font-family: Italiana, sans-serif;
 }
 .sidebar-content p {
   text-align: left;
@@ -580,17 +580,11 @@ p {
 .static {
   position: static;
 }
-.fixed {
-  position: fixed;
-}
 .absolute {
   position: absolute;
 }
 .relative {
   position: relative;
-}
-.sticky {
-  position: sticky;
 }
 .inset-0 {
   top: 0px;
@@ -616,9 +610,6 @@ p {
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
-.m-4 {
-  margin: 1rem;
-}
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -627,6 +618,10 @@ p {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
+.mx-5p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -634,6 +629,14 @@ p {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.my-5p {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 .mt-5 {
   margin-top: 1.25rem;
@@ -653,14 +656,20 @@ p {
 .mt-3 {
   margin-top: 0.75rem;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.ml-4 {
+  margin-left: 1rem;
+}
 .mt-5p {
   margin-top: 5%;
 }
+.mb-5p {
+  margin-bottom: 5%;
+}
 .mt-4 {
   margin-top: 1rem;
-}
-.mb-4 {
-  margin-bottom: 1rem;
 }
 .block {
   display: block;
@@ -755,11 +764,11 @@ p {
 .w-full {
   width: 100%;
 }
-.w-96 {
-  width: 24rem;
-}
 .max-w-screen-lg {
   max-width: 1024px;
+}
+.max-w-full {
+  max-width: 100%;
 }
 .shrink-0 {
   flex-shrink: 0;
@@ -1050,11 +1059,11 @@ p {
 .pt-2 {
   padding-top: 0.5rem;
 }
-.pb-0 {
-  padding-bottom: 0px;
-}
 .pr-5 {
   padding-right: 1.25rem;
+}
+.pb-0 {
+  padding-bottom: 0px;
 }
 .pr-50p {
   padding-right: 50%;
@@ -1340,6 +1349,13 @@ html {
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
   }
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+  .lg\:mx-10p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
   .lg\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -1347,11 +1363,17 @@ html {
   .lg\:ml-auto {
     margin-left: auto;
   }
+  .lg\:mr-10p {
+    margin-right: 10%;
+  }
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+  .lg\:ml-4 {
+    margin-left: 1rem;
   }
   .lg\:block {
     display: block;
@@ -1380,6 +1402,9 @@ html {
   }
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .lg\:grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
   }
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));

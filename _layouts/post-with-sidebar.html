@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="lg:bg-fixed flex px-5p lg:px-10p  items-center justify-center min-h-[50vh] bg-center w-100  text-white {% if page.banner.overlay == true %} overlay {% endif %}" style="background-image:url('{{ page.banner.image }}');">
+<section class="flex px-5p lg:px-10p  items-center justify-center min-h-[50vh] bg-center max-w-full  text-white {% if page.banner.overlay == true %} overlay {% endif %}" style="background-image:url('{{ page.banner.image }}'); background-size: cover; background-repeat: no-repeat;">
 
     <div class="justify-center">
         <p class="font-montserrat text-base uppercase tracking-widest text-center">{{page.banner.supheading}}</p>
@@ -14,24 +14,24 @@ layout: default
 {% include breadcrumbs.html %}
 
 
-<section class="p-5 lg:flex sidebar-content">
-	
+<section class="lg:grid lg:grid-cols-8 sidebar-content">
+	<!-- lg:flex  -->
 	<!-- and this div holds our sidebar -->
 
-	<div class="w-96 shrink-0">
+	<div class="lg:col-span-2 my-5 mx-5p lg:mx-10p">
 	
 		<a href="#retreat">
-			<div class="p-4 m-4 bg-light-grey"> 
+			<div class="p-4 mb-4 lg:ml-4 bg-light-grey"> 
 				<p class="mb-0">Golden Glow Retreat</p> 
 			</div>
 		</a>
 		<a href="#details">
-			<div class="p-4 m-4 bg-light-grey"> 
+			<div class="p-4 mb-4 lg:ml-4 bg-light-grey"> 
 				<p class="mb-0">Retreat Details</p> 
 			</div>
 		</a>
 		<a href="#room-options">
-			<div class="p-4 m-4 bg-light-grey"> 
+			<div class="p-4 mb-4 lg:ml-4 bg-light-grey"> 
 				<p class="mb-0">Room Options + Costs</p> 
 			</div>
 		</a>
@@ -40,7 +40,7 @@ layout: default
 
 
 	<!-- This div holds the main blog content --> 
-	<div class="p-4 sidebar-content">
+	<div class="lg:col-span-6 sidebar-content p-4 lg:pr-5p lg:mr-10p mt-5">
 		{{ content }}
 	</div>
 
