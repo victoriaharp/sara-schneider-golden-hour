@@ -755,6 +755,9 @@ p {
 .min-h-\[40vh\] {
   min-height: 40vh;
 }
+.min-h-\[10vh\] {
+  min-height: 10vh;
+}
 .w-\[150px\] {
   width: 150px;
 }
@@ -945,6 +948,10 @@ p {
 .bg-stone-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(231 229 228 / var(--tw-bg-opacity));
+}
+.bg-gh-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 190 90 / var(--tw-bg-opacity));
 }
 .bg-\[url\(\'\/images\/suns\/sunset-7\.jpeg\'\)\] {
   background-image: url('/images/suns/sunset-7.jpeg');
