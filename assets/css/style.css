@@ -622,6 +622,14 @@ p {
   margin-left: 5%;
   margin-right: 5%;
 }
+.my-5p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -629,14 +637,6 @@ p {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.my-5p {
-  margin-top: 5%;
-  margin-bottom: 5%;
 }
 .mt-5 {
   margin-top: 1.25rem;
@@ -658,9 +658,6 @@ p {
 }
 .mb-4 {
   margin-bottom: 1rem;
-}
-.ml-4 {
-  margin-left: 1rem;
 }
 .mt-5p {
   margin-top: 5%;
@@ -746,6 +743,9 @@ p {
 .min-h-50 {
   min-height: 50vh;
 }
+.min-h-\[10vh\] {
+  min-height: 10vh;
+}
 .min-h-\[50vh\] {
   min-height: 50vh;
 }
@@ -754,9 +754,6 @@ p {
 }
 .min-h-\[40vh\] {
   min-height: 40vh;
-}
-.min-h-\[10vh\] {
-  min-height: 10vh;
 }
 .w-\[150px\] {
   width: 150px;
@@ -945,13 +942,13 @@ p {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-stone-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(231 229 228 / var(--tw-bg-opacity));
-}
 .bg-gh-yellow {
   --tw-bg-opacity: 1;
   background-color: rgb(241 190 90 / var(--tw-bg-opacity));
+}
+.bg-stone-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 229 228 / var(--tw-bg-opacity));
 }
 .bg-\[url\(\'\/images\/suns\/sunset-7\.jpeg\'\)\] {
   background-image: url('/images/suns/sunset-7.jpeg');
@@ -1069,14 +1066,8 @@ p {
 .pr-5 {
   padding-right: 1.25rem;
 }
-.pb-0 {
-  padding-bottom: 0px;
-}
 .pr-50p {
   padding-right: 50%;
-}
-.pt-0 {
-  padding-top: 0px;
 }
 .text-left {
   text-align: left;
@@ -1373,6 +1364,9 @@ html {
   .lg\:ml-auto {
     margin-left: auto;
   }
+  .lg\:ml-4 {
+    margin-left: 1rem;
+  }
   .lg\:mr-10p {
     margin-right: 10%;
   }
@@ -1381,9 +1375,6 @@ html {
   }
   .lg\:mt-0 {
     margin-top: 0px;
-  }
-  .lg\:ml-4 {
-    margin-left: 1rem;
   }
   .lg\:block {
     display: block;
@@ -1448,11 +1439,11 @@ html {
   .lg\:pr-0 {
     padding-right: 0px;
   }
-  .lg\:pl-0 {
-    padding-left: 0px;
-  }
   .lg\:pr-5p {
     padding-right: 5%;
+  }
+  .lg\:pl-0 {
+    padding-left: 0px;
   }
   .lg\:pl-5p {
     padding-left: 5%;
