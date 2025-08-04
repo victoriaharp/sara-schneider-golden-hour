@@ -7,8 +7,8 @@
 - link: /services
   name: Services
 
-- link: /shop
-  name: Shop
+# - link: /shop
+#   name: Shop
 
 - link: /contact
   name: Contact
